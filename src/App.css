@@ -2,10 +2,11 @@
   margin-inline: auto;
   display: grid;
   grid-template-areas:
-    "shirt-output controls controls" "shirt-output colors colors"
-    "shirt-output colors colors";
-  grid-template-rows: auto 1fr 1fr;
-  grid-template-columns: minmax(12.5rem, 20rem) 1fr 1fr;
+    "controls"
+    "shirt-output"
+    "colors";
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
   max-height: 100%;
   overflow: hidden;
 }
@@ -13,20 +14,47 @@
 .shirt-output-container {
   grid-area: shirt-output;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  block-size: fit-content;
+  border-block-end: 2px solid var(--bulma-border);
 }
 
 .controls-container {
   grid-area: controls;
-  border-inline-start: 2px solid var(--bulma-border);
   border-block-end: 2px solid var(--bulma-border);
 }
 
 .colors-container {
   grid-area: colors;
   overflow: auto;
-  border-inline-start: 2px solid var(--bulma-border);
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 20rem 1fr 1fr;
+    grid-template-areas:
+      "shirt-output controls controls" "shirt-output colors colors"
+      "shirt-output colors colors";
+  }
+
+  .shirt-output-container {
+    grid-area: shirt-output;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    block-size: fit-content;
+    max-height: 100%;
+    overflow: auto;
+    border-block-end: none;
+    align-items: stretch;
+  }
+
+  .controls-container {
+    border-inline-start: 2px solid var(--bulma-border);
+  }
+
+  .colors-container {
+    overflow: auto;
+    border-inline-start: 2px solid var(--bulma-border);
+  }
 }

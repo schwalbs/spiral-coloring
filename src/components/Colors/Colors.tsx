@@ -36,7 +36,7 @@ const Colors: FC = () => {
       {colorCategories == null && <span>Loading colors...</span>}
       {colorCategories?.map((category) => (
         <div className="block" key={category.name}>
-          <h3 className="subtitle is-4">{category.name}</h3>
+          <h3 className="subtitle is-4 is-size-5-mobile">{category.name}</h3>
           <div className="colors__color-grid grid is-gap-1">
             {category.colors.sort(byDisplayOrder).map((color) => (
               <div className="cell colors__color" key={color.id}>
