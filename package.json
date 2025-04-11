@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --host",
-    "dev": "vite",
+    "dev": "vite --host",
     "build:colors:dharma": "node ./scripts/build-dharma-colors.js",
     "build:colors:proChem": "node ./scripts/build-pro-chem.js",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -25,6 +26,7 @@
     "eslint": "^9.24.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "node-html-parser": "^7.0.1",
     "prettier": "^3.5.3",

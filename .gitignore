@@ -134,3 +134,5 @@ out
 .yarn/install-state.gz
 .pnp.*
 .vscode
+
+dist
