@@ -22,7 +22,9 @@ const Colors: FC = () => {
 
   useEffect(() => {
     (async () => {
-      const loadedColorsRequest = await fetch("/colors-compiled.json");
+      const loadedColorsRequest = await fetch(
+        "/spiral-coloring/colors-compiled.json",
+      );
       const loadedColors = await loadedColorsRequest.json();
 
       setColorCategories(loadedColors);
