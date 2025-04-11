@@ -1,0 +1,3 @@
+.colors__color-grid {
+  grid-template-columns: repeat(auto-fit, var(--bulma-grid-column-min));
+}
