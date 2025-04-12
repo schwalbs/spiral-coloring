@@ -1,8 +1,8 @@
 import { createContext, FC, PropsWithChildren, useMemo, useState } from "react";
-import { Color, ColorStyle } from "../types/globals";
+import { Color, DyeStyle } from "../types/globals";
 
 type AppStateData = {
-  dyeStyle: ColorStyle;
+  dyeStyle: DyeStyle;
   selectedColor: Color | null;
   shirt: {
     numSpirals: number;
@@ -12,7 +12,7 @@ type AppStateData = {
 
 export type AppState = AppStateData & {
   set: {
-    dyeStyle: (nextStyle: ColorStyle) => void;
+    dyeStyle: (nextStyle: DyeStyle) => void;
     numSpirals: (numSpirals: number) => void;
     selectedColor: (nextColor: Color | null) => void;
     spiralColor: (spiralIndex: number, color: Color) => void;

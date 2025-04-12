@@ -11,4 +11,4 @@ export type ColorCategory = {
   colors: Array<Color>;
 };
 
-export type ColorStyle = "liquid" | "ice";
+export type DyeStyle = "liquid" | "ice";
