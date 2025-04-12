@@ -1,7 +1,6 @@
 import { useContext, type FC } from "react";
 import "./DyePlacementDiagram.css";
-import { SelectedColorContext } from "../../context/selectedColorContext";
-import { SpiralsContext } from "../../context/spiralsContext";
+import { AppStateContext } from "../../context/appStateContext";
 
 type Props = {};
 
@@ -20,15 +19,14 @@ const getXYFromRadians = (radians: number): [number, number] => {
  * TODO rotate to reflect shirt
  */
 const DyePlacementDiagram: FC<Props> = ({}) => {
-  const { selectedColor } = useContext(SelectedColorContext);
-  const { numSpirals, setSpiralColor, spirals } = useContext(SpiralsContext);
+  const { selectedColor, set, shirt } = useContext(AppStateContext);
 
   const handleSectionClick = (section: number): void => {
     if (!selectedColor) {
       return;
     }
 
-    setSpiralColor(section, selectedColor);
+    set.spiralColor(section, selectedColor);
   };
 
   return (
@@ -46,17 +44,21 @@ const DyePlacementDiagram: FC<Props> = ({}) => {
           stroke="#fff"
           strokeWidth="0.5"
           className="dye-placement-diagram__slice-path"
-          fill={numSpirals === 1 && spirals[0] ? spirals[0].hexCode : "#fff"}
+          fill={
+            shirt.numSpirals === 1 && shirt.spirals[0]
+              ? shirt.spirals[0].hexCode
+              : "#fff"
+          }
           onClick={() => handleSectionClick(0)}
         />
-        {numSpirals > 1 &&
-          Array.from({ length: numSpirals }).map((_, section) => {
-            const radiansPerSection = (2 * Math.PI) / numSpirals;
+        {shirt.numSpirals > 1 &&
+          Array.from({ length: shirt.numSpirals }).map((_, section) => {
+            const radiansPerSection = (2 * Math.PI) / shirt.numSpirals;
             const arcStartXY = getXYFromRadians(radiansPerSection * section);
             const arcEndXY = getXYFromRadians(
               radiansPerSection * (section + 1),
             );
-            const spiral = spirals[section];
+            const spiral = shirt.spirals[section];
 
             return (
               <path

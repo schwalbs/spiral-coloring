@@ -2,7 +2,7 @@ import { FC, MouseEventHandler, useContext } from "react";
 import { Color } from "../../types/globals";
 import "./ColorBlock.css";
 import { buildIceDyeSwatchUrl } from "../../utils/dharma";
-import { SelectedColorContext } from "../../context/selectedColorContext";
+import { AppStateContext } from "../../context/appStateContext";
 
 type Props = {
   color: Color;
@@ -11,7 +11,7 @@ type Props = {
 };
 
 const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
-  const { colorStyle: style } = useContext(SelectedColorContext);
+  const { dyeStyle: style } = useContext(AppStateContext);
 
   return (
     <div

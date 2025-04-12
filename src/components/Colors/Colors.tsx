@@ -1,7 +1,7 @@
 import { FC, useContext, useEffect, useState } from "react";
 import { Color, ColorCategory } from "../../types/globals";
 import ColorBlock from "../ColorBlock";
-import { SelectedColorContext } from "../../context/selectedColorContext";
+import { AppStateContext } from "../../context/appStateContext";
 import "./Colors.css";
 
 const byDisplayOrder = (a: Color, b: Color): number =>
@@ -15,7 +15,7 @@ const byDisplayOrder = (a: Color, b: Color): number =>
  * TODO: add grateful dyes https://www.grateful-dyes.com/fabric-dyes/
  */
 const Colors: FC = () => {
-  const { selectedColor, setSelectedColor } = useContext(SelectedColorContext);
+  const { selectedColor, set } = useContext(AppStateContext);
   const [colorCategories, setColorCategories] = useState<
     ColorCategory[] | null
   >(null);
@@ -44,7 +44,7 @@ const Colors: FC = () => {
                   color={color}
                   isSelected={color.id === selectedColor?.id}
                   onClick={() => {
-                    setSelectedColor(color);
+                    set.selectedColor(color);
                   }}
                 />
               </div>

@@ -1,6 +1,5 @@
 import { ChangeEventHandler, FC, useContext } from "react";
-import { SpiralsContext } from "../../context/spiralsContext";
-import { SelectedColorContext } from "../../context/selectedColorContext";
+import { AppStateContext } from "../../context/appStateContext";
 
 /**
  * TODO: add controls for spin direction, blend amount
@@ -9,19 +8,18 @@ import { SelectedColorContext } from "../../context/selectedColorContext";
  * TODO: add clear shirt
  */
 const SpiralControls: FC = () => {
-  const { colorStyle, setColorStyle } = useContext(SelectedColorContext);
-  const { numSpirals, setNumSpirals } = useContext(SpiralsContext);
+  const { dyeStyle, set, shirt } = useContext(AppStateContext);
 
   const onNumSpiralsChange: ChangeEventHandler<HTMLInputElement> = ({
     target: { value },
   }) => {
-    setNumSpirals(parseInt(value));
+    set.numSpirals(parseInt(value));
   };
 
   const handleColorStyleChange: ChangeEventHandler<HTMLInputElement> = (
     event,
   ): void => {
-    setColorStyle(event.currentTarget.value as "ice" | "liquid");
+    set.dyeStyle(event.currentTarget.value as "ice" | "liquid");
   };
 
   return (
@@ -31,7 +29,7 @@ const SpiralControls: FC = () => {
         <label className="radio">
           <input
             type="radio"
-            checked={colorStyle === "liquid"}
+            checked={dyeStyle === "liquid"}
             onChange={handleColorStyleChange}
             value="liquid"
           />
@@ -40,7 +38,7 @@ const SpiralControls: FC = () => {
         <label className="radio">
           <input
             type="radio"
-            checked={colorStyle === "ice"}
+            checked={dyeStyle === "ice"}
             onChange={handleColorStyleChange}
             value="ice"
           />
@@ -51,12 +49,12 @@ const SpiralControls: FC = () => {
         <label className="is-inline-flex is-flex-direction-column">
           <span>Spiral section count</span>
           <span className="is-flex is-gap-2">
-            <span className="is-size-6">{numSpirals}</span>
+            <span className="is-size-6">{shirt.numSpirals}</span>
             <input
               type="range"
               min="2"
               max="10"
-              value={numSpirals}
+              value={shirt.numSpirals}
               onChange={onNumSpiralsChange}
             />
           </span>
