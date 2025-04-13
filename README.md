@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Tie Dye Spiral Coloring App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is a tool to visualize how applying dye to a folded spiral shirt will result using colors from dye manufacturers. It is currently deployed [here](https://schwalbs.github.io/spiral-coloring/).
 
-Currently, two official plugins are available:
+Color manufacturers currently supported:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Dharma trading company](https://www.dharmatrading.com/dyes/dharma-fiber-reactive-procion-dyes.html)
 
-## Expanding the ESLint configuration
+## Development
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This project is built with [react](https://react.dev/), [vite](https://vite.dev/), and TypeScript.
 
-- Configure the top-level `parserOptions` property like this:
+### Commands
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+```bash
+# start dev server
+npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# built prod files under dist/
+npm run build
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# serve prod files
+npm run preview
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+# build and deploy to github pages
+npm run deploy
+
+# build dye manufactures data under public/colors-compiled.json
+# each manufacturer can be built with build:colors:<manufacturer>
+npm run build:colors
 ```
