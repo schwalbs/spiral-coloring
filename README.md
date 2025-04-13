@@ -30,6 +30,19 @@ npm run deploy
 npm run build:colors
 ```
 
+### Adding a new dye manufacturer
+
+Each manufacturer needs a custom builder under `./scripts` due to no standardization in hosting.
+Dharma is chill and has some JSON files we can request, but others require page scrapers.
+Each manufacturer script should export a single async function that returns an object matching to `Company` in `./src/types/colors.ts`.
+Refer to `./src/types/colors.ts` for expected formats.
+
+`./scripts/build-colors.js` is the single entrypoint and can filter based on args passed.
+
+1. Create a `.js` under `./scripts` exporting a single async function that returns a `Company`
+2. Update `MANUFACTURER_BUILDERS` to map the imported script to a manufacturer key
+3. Add a new script to `package.json` to run `build-colors.js` with just the manufacturer
+
 ## Future improvements
 
 - [ ] Add support for other dye manufacturers
