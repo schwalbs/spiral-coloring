@@ -1,1 +1,1 @@
-export { default } from './ColorBlock';
+export { default } from "./ColorBlock";

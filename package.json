@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "colors:dharma": "npm run colors -- dharma",
-    "colors:proChem": "npm run colors -- proChem",
+    "colors:pro-chem": "npm run colors -- pro-chem",
     "colors": "node ./scripts/build-colors.js",
     "build:clean": "rm -rf dist/",
     "prebuild": "npm run build:clean",
@@ -16,6 +16,13 @@
     "lint": "eslint . --fix",
     "preview": "vite preview",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "!(*.ts|*.js|*.tsx|.husky/**/*)": "prettier --write"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -36,6 +43,7 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "node-html-parser": "^7.0.1",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",

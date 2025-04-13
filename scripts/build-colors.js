@@ -8,7 +8,7 @@ import buildProChemColors from "./build-colors-pro-chem.js";
 
 const MANUFACTURER_BUILDERS = {
   dharma: buildDharmaColors,
-  proChem: buildProChemColors,
+  ["pro-chem"]: buildProChemColors,
 };
 
 const manufacturerArgs = process.argv.slice(2);
