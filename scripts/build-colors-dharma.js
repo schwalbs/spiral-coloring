@@ -24,20 +24,17 @@ export default async function buildDharmaColors() {
   const allColors = colorSections.reduce((allColorsBuilder, colorCategory) => {
     const categoryPositions = Object.keys(colorCategory.variants);
 
-    const categoryColors = categoryPositions
-      .map((key) => {
-        const color = colorCategory.variants[key];
+    const categoryColors = categoryPositions.map((key) => {
+      const color = colorCategory.variants[key];
 
-        return {
-          name: color.textval
-            .replace(/(^[A-Za-z0-9]+ : | - .*$|\*|\(\w\))/g, "")
-            .trim(),
-          hexCode: colorHexCodeByColor[color.vcode] ?? "#ffffff",
-          id: color.vcode,
-          displayOrder: parseInt(key),
-        };
-      })
-      .sort((a, b) => a.displayOrder - b.displayOrder);
+      return {
+        name: color.textval
+          .replace(/(^[A-Za-z0-9]+ : | - .*$|\*|\(\w\))/g, "")
+          .trim(),
+        hexCode: colorHexCodeByColor[color.vcode] ?? "#ffffff",
+        id: color.vcode,
+      };
+    });
 
     return [...allColorsBuilder, ...categoryColors];
   }, []);

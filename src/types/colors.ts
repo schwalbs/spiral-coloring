@@ -1,5 +1,4 @@
 export type Color = {
-  displayOrder: number;
   hexCode: string;
   id: string;
   name: string;

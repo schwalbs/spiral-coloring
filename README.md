@@ -5,10 +5,17 @@ This app is a tool to visualize how applying dye to a folded spiral shirt will r
 Color manufacturers currently supported:
 
 - [Dharma trading company](https://www.dharmatrading.com/dyes/dharma-fiber-reactive-procion-dyes.html)
+- [Pro Chem and Dye](https://prochemicalanddye.com/)
 
 ## Development
 
 This project is built with [react](https://react.dev/), [vite](https://vite.dev/), and TypeScript.
+Other core libraries:
+
+- [node-html-parser](https://www.npmjs.com/package/node-html-parser) to parse dye manufacturer pages
+- [color-sorter](https://www.npmjs.com/package/color-sorter) to sort dye coolors by color
+- [canvas](https://www.npmjs.com/package/canvas) to reduce an image to a hex value
+  - you may need to install libraries for this to work, refer to the [docs](https://github.com/Automattic/node-canvas?tab=readme-ov-file#compiling)
 
 ### Commands
 
@@ -25,9 +32,9 @@ npm run preview
 # build and deploy to github pages
 npm run deploy
 
-# build dye manufactures data under public/colors-compiled.json
-# each manufacturer can be built with build:colors:<manufacturer>
-npm run build:colors
+# build dye manufactures data under ./public/colors-compiled.json
+# each manufacturer can be built with colors:<manufacturer>
+npm run colors
 ```
 
 ### Adding a new dye manufacturer
@@ -46,7 +53,6 @@ Refer to `./src/types/colors.ts` for expected formats.
 ## Future improvements
 
 - [ ] Add support for other dye manufacturers
-  - [ ] [Pro Chem and Dye](https://prochemicalanddye.com/)
   - [ ] [Jacquard](https://www.jacquardproducts.com/procion-mx)
   - [ ] [Custom Colors](https://customcoloursinc.storenvy.com/)
   - [ ] [Happy Cat Dyes](https://www.happycattiedye.com/shop/category/dyes)
@@ -69,6 +75,8 @@ Refer to `./src/types/colors.ts` for expected formats.
 - [ ] Shareable URL
 - [ ] Active color indicator
 - [ ] Tech improvements
-  - [ ] Infer hex color from dye image
+  - [x] ~~Infer hex color from dye image~~
   - [x] ~~Move vite allowed hosts to .env~~
   - [ ] Commit linter
+  - [ ] Error boundaries
+  - [ ] Better error handling when building colors

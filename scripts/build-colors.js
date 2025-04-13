@@ -4,9 +4,11 @@ import * as path from "path";
 import { sortFn as byColor } from "color-sorter";
 
 import buildDharmaColors from "./build-colors-dharma.js";
+import buildProChemColors from "./build-colors-pro-chem.js";
 
 const MANUFACTURER_BUILDERS = {
   dharma: buildDharmaColors,
+  proChem: buildProChemColors,
 };
 
 const manufacturerArgs = process.argv.slice(2);
