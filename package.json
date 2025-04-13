@@ -9,7 +9,7 @@
     "colors:proChem": "npm run colors -- proChem",
     "colors": "node ./scripts/build-colors.js",
     "build:clean": "rm -rf dist/",
-    "build": "npm run clean && tsc -b && vite build",
+    "build": "npm run build:clean && tsc -b && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint . --fix",
