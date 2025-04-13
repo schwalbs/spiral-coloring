@@ -1,5 +1,5 @@
 import { FC, useContext, useEffect, useState } from "react";
-import { Company } from "../../types/globals";
+import { Company } from "../../types/colors";
 import ColorBlock from "../ColorBlock";
 import { AppStateContext } from "../../context/AppStateContext/AppStateContext";
 import "./Colors.css";

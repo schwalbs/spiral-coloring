@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { Color, DyeStyle } from "../../types/globals";
+import { Color, DyeStyle } from "../../types/colors";
 
 export type AppStateData = {
   dyeStyle: DyeStyle;

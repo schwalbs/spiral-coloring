@@ -1,6 +1,6 @@
 import { FC, MouseEventHandler, useContext } from "react";
-import { Color } from "../../types/globals";
-import "./ColorBlock.css";
+import { Color } from "../../types/colors";
+import styles from "./ColorBlock.module.css";
 import { buildIceDyeSwatchUrl } from "../../utils/dharma";
 import { AppStateContext } from "../../context/AppStateContext";
 
@@ -15,11 +15,11 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
 
   return (
     <div
-      className={`color-container ${isSelected ? "color-container--selected" : ""}`}
+      className={`${styles.container} ${isSelected ? styles.containerSelected : ""}`}
     >
-      <span className="is-size-6 color-container__name">{color.name}</span>
+      <span className={`is-size-6 ${styles.name}`}>{color.name}</span>
       <button
-        className="color-container__color-block"
+        className={`${styles.colorBlock}`}
         type="button"
         onClick={onClick}
         style={{
