@@ -32,29 +32,30 @@ npm run build:colors
 
 ## Future improvements
 
-- Add support for other dye manufacturers
+- [ ] Add support for other dye manufacturers
   - [ ] [Pro Chem and Dye](https://prochemicalanddye.com/)
   - [ ] [Jacquard](https://www.jacquardproducts.com/procion-mx)
   - [ ] [Custom Colors](https://customcoloursinc.storenvy.com/)
   - [ ] [Happy Cat Dyes](https://www.happycattiedye.com/shop/category/dyes)
   - [ ] [Grateful Dyes](https://www.grateful-dyes.com/fabric-dyes/)
 - [ ] Collapsable manufacturer sections
-- Additional controls
+- [ ] Additional controls
   - [ ] Spiral direction
   - [ ] Reset shirt
   - [ ] Erase single color
   - [ ] Color blend amount
 - [ ] Blending between colors in spiral
-- Filters for colors
+- [ ] Filters for colors
   - [ ] Color group (red, pink, green, blue, purple, yellow, orange, neutrals, brown)
   - [ ] Manufacturer
 - [ ] Background or texture to folded shirt
-- Export options
+- [ ] Export options
   - [ ] Spiraled shirt image download
   - [ ] PDF or image with color swatch
 - [ ] Color swatch section for shirt
 - [ ] Shareable URL
 - [ ] Active color indicator
-- Tech stuff
+- [ ] Tech improvements
   - [ ] Infer hex color from dye image
-  - [ ]
+  - [ ] Move vite allowed hosts to .env
+  - [ ] Commit linter
