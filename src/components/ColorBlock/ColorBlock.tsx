@@ -17,18 +17,19 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
       type="button"
       onClick={onClick}
       className={`${styles.container} ${isSelected ? styles.containerSelected : ""} is-flex is-flex-direction-column is-justify-content-space-between p-1 is-clipped`}
+      style={{
+        backgroundColor: color.hexCode,
+        backgroundImage:
+          style === "ice" && color.iceDyeImgSrc
+            ? `url(${color.iceDyeImgSrc})`
+            : undefined,
+      }}
     >
-      <span className={`is-size-6 mb-1 ${styles.name}`}>{color.name}</span>
-      <div
-        className={styles.colorBlock}
-        style={{
-          backgroundColor: color.hexCode,
-          backgroundImage:
-            style === "ice" && color.iceDyeImgSrc
-              ? `url(${color.iceDyeImgSrc})`
-              : undefined,
-        }}
-      />
+      <span
+        className={`${styles.name} is-size-6 has-background-black-bis py-2 px-1`}
+      >
+        {color.name}
+      </span>
     </button>
   );
 };
