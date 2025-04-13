@@ -26,7 +26,7 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
       }}
     >
       <span
-        className={`${styles.name} is-size-6 has-background-black-bis py-2 px-1`}
+        className={`${styles.name} is-size-6 is-size-7-mobile has-background-black-bis py-2 px-1`}
       >
         {color.name}
       </span>

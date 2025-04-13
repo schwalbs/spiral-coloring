@@ -1,5 +1,5 @@
 .colorGrid {
-  grid-template-columns: repeat(auto-fit, 7rem);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .manufacturerName {

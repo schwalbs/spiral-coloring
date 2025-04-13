@@ -83,3 +83,4 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Better error handling when building colors
   - [ ] Workers for each manufacturer builder
   - [ ] Dye manufacturer JSON validation
+  - [ ] Update `build-colors.js` to use workers
