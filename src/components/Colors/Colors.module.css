@@ -2,6 +2,11 @@
   grid-template-columns: repeat(auto-fit, 7rem);
 }
 
+.manufacturerName {
+  position: sticky;
+  top: 0;
+}
+
 @media screen and (min-width: 768px) {
   .colorGrid {
     grid-template-columns: repeat(auto-fit, var(--bulma-grid-column-min));

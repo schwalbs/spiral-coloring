@@ -17,7 +17,7 @@ const SpiralControls: FC = () => {
   };
 
   return (
-    <div className="block spiral-controls is-flex is-gap-4">
+    <div className="block is-flex is-gap-4">
       <fieldset className="radios">
         <legend>Dye application</legend>
         <label className="radio">
@@ -27,7 +27,7 @@ const SpiralControls: FC = () => {
             onChange={handleColorStyleChange}
             value="liquid"
           />
-          Liquid
+          <span className="ml-2">Liquid</span>
         </label>
         <label className="radio">
           <input
@@ -36,7 +36,7 @@ const SpiralControls: FC = () => {
             onChange={handleColorStyleChange}
             value="ice"
           />
-          Ice
+          <span className="ml-2">Ice</span>
         </label>
       </fieldset>
       <div>

@@ -1,11 +1,7 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border-radius: 4px;
-  overflow: hidden;
   height: 100%;
-  padding: 0.25rem;
+  width: 100%;
 }
 
 .containerSelected {
@@ -14,7 +10,6 @@
 
 .name {
   display: inline-block;
-  padding-inline: 0.5rem;
 }
 
 .colorBlock {
@@ -22,5 +17,4 @@
   inline-size: 100%;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  overflow: hidden;
 }

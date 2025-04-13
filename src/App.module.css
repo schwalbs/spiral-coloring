@@ -44,8 +44,6 @@
   .shirtOutputContainer {
     grid-area: shirt-output;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     block-size: fit-content;
     max-height: 100%;
     overflow: auto;

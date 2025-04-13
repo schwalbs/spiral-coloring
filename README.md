@@ -9,7 +9,7 @@ Color manufacturers currently supported:
 
 ## Development
 
-This project is built with [react](https://react.dev/), [vite](https://vite.dev/), and TypeScript.
+This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, and the [Bulma CSS framework](https://bulma.io/).
 Other core libraries:
 
 - [node-html-parser](https://www.npmjs.com/package/node-html-parser) to parse dye manufacturer pages

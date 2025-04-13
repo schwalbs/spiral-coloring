@@ -20,11 +20,13 @@ const Colors: FC = () => {
   }, []);
 
   return (
-    <div className="colors">
+    <div className="pb-4">
       {dyeCompanies == null && <span>Loading colors...</span>}
       {dyeCompanies?.map((company) => (
         <div className="block" key={company.name}>
-          <h3 className="subtitle is-4 is-size-5-mobile is-underlined">
+          <h3
+            className={`${styles.manufacturerName} subtitle has-background-black-bis is-4 is-size-5-mobile is-underlined py-4 mb-1`}
+          >
             <a href={company.siteHref} target="_blank">
               {company.name}
             </a>

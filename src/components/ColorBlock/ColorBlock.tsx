@@ -13,14 +13,14 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
   const { dyeStyle: style } = useContext(AppStateContext);
 
   return (
-    <div
-      className={`${styles.container} ${isSelected ? styles.containerSelected : ""}`}
+    <button
+      type="button"
+      onClick={onClick}
+      className={`${styles.container} ${isSelected ? styles.containerSelected : ""} is-flex is-flex-direction-column is-justify-content-space-between p-1 is-clipped`}
     >
-      <span className={`is-size-6 ${styles.name}`}>{color.name}</span>
-      <button
-        className={`${styles.colorBlock}`}
-        type="button"
-        onClick={onClick}
+      <span className={`is-size-6 mb-1 ${styles.name}`}>{color.name}</span>
+      <div
+        className={styles.colorBlock}
         style={{
           backgroundColor: color.hexCode,
           backgroundImage:
@@ -29,7 +29,7 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
               : undefined,
         }}
       />
-    </div>
+    </button>
   );
 };
 export default ColorBlock;
