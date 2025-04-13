@@ -16,6 +16,7 @@ Other core libraries:
 - [color-sorter](https://www.npmjs.com/package/color-sorter) to sort dye coolors by color
 - [canvas](https://www.npmjs.com/package/canvas) to reduce an image to a hex value
   - you may need to install libraries for this to work, refer to the [docs](https://github.com/Automattic/node-canvas?tab=readme-ov-file#compiling)
+- [Material Design Icons](https://pictogrammers.com/library/mdi/) for icons
 
 ### Commands
 

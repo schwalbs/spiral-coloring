@@ -1,4 +1,6 @@
 import { FC, useContext, useEffect, useState } from "react";
+import Icon from "@mdi/react";
+import { mdiOpenInNew } from "@mdi/js";
 import { Company } from "../../types/colors";
 import ColorBlock from "../ColorBlock";
 import { AppStateContext } from "../../context/AppStateContext";
@@ -25,10 +27,17 @@ const Colors: FC = () => {
       {dyeCompanies?.map((company) => (
         <div className="block" key={company.name}>
           <h3
-            className={`${styles.manufacturerName} subtitle has-background-black-bis is-4 is-size-5-mobile is-underlined py-4 mb-1`}
+            className={`${styles.manufacturerName} subtitle has-background-black-bis is-4 is-size-5-mobile py-4 mb-1`}
           >
-            <a href={company.siteHref} target="_blank">
-              {company.name}
+            {company.name}
+            <a
+              className="ml-2"
+              href={company.siteHref}
+              target="_blank"
+              aria-label={`Open ${company.name} dye page in a new tab`}
+              title={`Open ${company.name} dye page in a new tab`}
+            >
+              <Icon path={mdiOpenInNew} aria-hidden="true" size={0.67} />
             </a>
           </h3>
           <div className={`${styles.colorGrid} grid is-gap-1`}>
