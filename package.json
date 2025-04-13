@@ -10,8 +10,9 @@
     "build": "tsc -b && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint . --fix",
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "color-sorter": "^7.0.0",

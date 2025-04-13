@@ -1,8 +1,6 @@
 import { useContext, type FC } from "react";
 import "./DyePlacementDiagram.css";
-import { AppStateContext } from "../../context/appStateContext";
-
-type Props = {};
+import { AppStateContext } from "../../context/AppStateContext";
 
 const VIEW_BOX_SIZE = 500;
 const SPIRAL_RADIUS = VIEW_BOX_SIZE / 2;
@@ -18,7 +16,7 @@ const getXYFromRadians = (radians: number): [number, number] => {
  * TODO add background to represent shirt
  * TODO rotate to reflect shirt
  */
-const DyePlacementDiagram: FC<Props> = ({}) => {
+const DyePlacementDiagram: FC = () => {
   const { selectedColor, set, shirt } = useContext(AppStateContext);
 
   const handleSectionClick = (section: number): void => {

@@ -3,9 +3,9 @@ import DyePlacementDiagram from "./components/DyePlacementDiagram";
 import Colors from "./components/Colors";
 import Shirt from "./components/Shirt/Shirt";
 import SpiralControls from "./components/SpiralControls";
+import { AppStateContextProvider } from "./context/AppStateContext";
 
 import "./App.css";
-import { AppStateContextProvider } from "./context/appStateContext";
 
 const App: FC = () => {
   return (

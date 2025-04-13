@@ -1,14 +1,12 @@
 import { useContext, type FC } from "react";
 import "./Shirt.css";
-import { AppStateContext } from "../../context/appStateContext";
+import { AppStateContext } from "../../context/AppStateContext";
 import buildSpiralPaths from "./buildSpiralPaths";
 import { buildIceDyeSwatchUrl } from "../../utils/dharma";
 
-type Props = {};
-
 const VIEWBOX_SIZE = 500;
 
-const Shirt: FC<Props> = ({}) => {
+const Shirt: FC = () => {
   const { dyeStyle, shirt } = useContext(AppStateContext);
 
   const { spiralFillPaths } = buildSpiralPaths({

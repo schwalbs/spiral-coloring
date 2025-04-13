@@ -1,29 +1,10 @@
-import { createContext, FC, PropsWithChildren, useMemo, useState } from "react";
-import { Color, DyeStyle } from "../types/globals";
+import { type FC, type PropsWithChildren, useMemo, useState } from "react";
+import AppStateContext, {
+  type AppState,
+  type AppStateData,
+} from "./AppStateContext";
 
-type AppStateData = {
-  dyeStyle: DyeStyle;
-  selectedColor: Color | null;
-  shirt: {
-    numSpirals: number;
-    spirals: Array<Color | undefined>;
-  };
-};
-
-export type AppState = AppStateData & {
-  set: {
-    dyeStyle: (nextStyle: DyeStyle) => void;
-    numSpirals: (numSpirals: number) => void;
-    selectedColor: (nextColor: Color | null) => void;
-    spiralColor: (spiralIndex: number, color: Color) => void;
-  };
-};
-
-export const AppStateContext = createContext<AppState>({} as unknown as never);
-
-export const AppStateContextProvider: FC<PropsWithChildren<{}>> = ({
-  children,
-}) => {
+const AppStateContextProvider: FC<PropsWithChildren> = ({ children }) => {
   const [appStateData, setAppStateData] = useState<AppStateData>({
     dyeStyle: "liquid",
     selectedColor: null,
@@ -83,3 +64,5 @@ export const AppStateContextProvider: FC<PropsWithChildren<{}>> = ({
     </AppStateContext.Provider>
   );
 };
+
+export default AppStateContextProvider;

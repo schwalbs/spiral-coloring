@@ -2,7 +2,7 @@ import { FC, MouseEventHandler, useContext } from "react";
 import { Color } from "../../types/globals";
 import "./ColorBlock.css";
 import { buildIceDyeSwatchUrl } from "../../utils/dharma";
-import { AppStateContext } from "../../context/appStateContext";
+import { AppStateContext } from "../../context/AppStateContext";
 
 type Props = {
   color: Color;

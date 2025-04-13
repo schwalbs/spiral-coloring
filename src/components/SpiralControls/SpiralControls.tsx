@@ -1,5 +1,5 @@
 import { ChangeEventHandler, FC, useContext } from "react";
-import { AppStateContext } from "../../context/appStateContext";
+import { AppStateContext } from "../../context/AppStateContext";
 
 /**
  * TODO: add controls for spin direction, blend amount
