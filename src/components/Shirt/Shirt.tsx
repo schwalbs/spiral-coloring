@@ -1,7 +1,6 @@
 import { useContext, type FC } from "react";
 import { AppStateContext } from "../../context/AppStateContext";
 import buildSpiralPaths from "./buildSpiralPaths";
-import { buildIceDyeSwatchUrl } from "../../utils/dharma";
 import styles from "./Shirt.module.css";
 
 const VIEWBOX_SIZE = 500;
@@ -52,7 +51,7 @@ const Shirt: FC = () => {
                   preserveAspectRatio="xMidYMid meet"
                   height="500"
                   width="500"
-                  href={buildIceDyeSwatchUrl(color)}
+                  href={color.iceDyeImgSrc}
                 />
               </pattern>
             );

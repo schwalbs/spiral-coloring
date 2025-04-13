@@ -1,7 +1,6 @@
 import { FC, MouseEventHandler, useContext } from "react";
 import { Color } from "../../types/colors";
 import styles from "./ColorBlock.module.css";
-import { buildIceDyeSwatchUrl } from "../../utils/dharma";
 import { AppStateContext } from "../../context/AppStateContext";
 
 type Props = {
@@ -25,7 +24,9 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
         style={{
           backgroundColor: color.hexCode,
           backgroundImage:
-            style === "ice" ? `url(${buildIceDyeSwatchUrl(color)})` : undefined,
+            style === "ice" && color.iceDyeImgSrc
+              ? `url(${color.iceDyeImgSrc})`
+              : undefined,
         }}
       />
     </div>

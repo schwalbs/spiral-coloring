@@ -2,6 +2,7 @@ export type Color = {
   hexCode: string;
   id: string;
   name: string;
+  iceDyeImgSrc?: string;
 };
 
 export type Company = {

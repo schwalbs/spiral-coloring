@@ -5,786 +5,943 @@
       {
         "name": "Watermelon",
         "hexCode": "#f15751",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-166.jpg",
         "id": "166"
       },
       {
         "name": "Atomic Fireball",
         "hexCode": "#f2463f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-190.jpg",
         "id": "190"
       },
       {
         "name": "Scarlet",
         "hexCode": "#eb1007",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-9.jpg",
         "id": "9"
       },
       {
         "name": "Oxblood Red",
         "hexCode": "#bd3c35",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-136.jpg",
         "id": "136"
       },
       {
         "name": "Chocolate Brown",
         "hexCode": "#8c4d46",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-35a.jpg",
         "id": "35A"
       },
       {
         "name": "Rust Brown",
         "hexCode": "#b35d50",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-34.jpg",
         "id": "34"
       },
       {
         "name": "Coral Pink",
         "hexCode": "#fc927e",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-14.jpg",
         "id": "14"
       },
       {
         "name": "Tangerine",
         "hexCode": "#dc5435",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-120.jpg",
         "id": "120"
       },
       {
         "name": "Terracotta",
         "hexCode": "#d1735c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-141.jpg",
         "id": "141"
       },
       {
         "name": "Dutch Chocolate",
         "hexCode": "#80594f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-142.jpg",
         "id": "142"
       },
       {
         "name": "Dark Brown",
         "hexCode": "#854935",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-35.jpg",
         "id": "35"
       },
       {
         "name": "Peach",
         "hexCode": "#ffad8f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-7a.jpg",
         "id": "7A"
       },
       {
         "name": "Pagoda Red",
         "hexCode": "#cc5c2d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-8a.jpg",
         "id": "8A"
       },
       {
         "name": "Shiitake Mushroom",
         "hexCode": "#b39486",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-178.jpg",
         "id": "178"
       },
       {
         "name": "Warrior Princess",
         "hexCode": "#9e8172",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-208.jpg",
         "id": "208"
       },
       {
         "name": "Deep Orange",
         "hexCode": "#ff6600",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-6.jpg",
         "id": "6"
       },
       {
         "name": "Orange Crush",
         "hexCode": "#ff8021",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-167.jpg",
         "id": "167"
       },
       {
         "name": "Phoenix Flame",
         "hexCode": "#BA8A66",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-203.jpg",
         "id": "203"
       },
       {
         "name": "Golden Brown",
         "hexCode": "#bf7c43",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-113.jpg",
         "id": "113"
       },
       {
         "name": "Orange Sorbet",
         "hexCode": "#ffa659",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-147.jpg",
         "id": "147"
       },
       {
         "name": "Wild Thing",
         "hexCode": "#9e9082",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-205.jpg",
         "id": "205"
       },
       {
         "name": "Brazilnut",
         "hexCode": "#73624c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-116.jpg",
         "id": "116"
       },
       {
         "name": "Chamois",
         "hexCode": "#edc591",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-144.jpg",
         "id": "144"
       },
       {
         "name": "Soft Orange",
         "hexCode": "#ff9b0b",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-5.jpg",
         "id": "5"
       },
       {
         "name": "Ecru",
         "hexCode": "#e6d8c3",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-6a.jpg",
         "id": "6A"
       },
       {
         "name": "Camel",
         "hexCode": "#e0c392",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-101.jpg",
         "id": "101"
       },
       {
         "name": "Palomino Gold",
         "hexCode": "#ebc781",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-138.jpg",
         "id": "138"
       },
       {
         "name": "Amber Waves",
         "hexCode": "#e6bc67",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-155.jpg",
         "id": "155"
       },
       {
         "name": "Bronze",
         "hexCode": "#b89337",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-37.jpg",
         "id": "37"
       },
       {
         "name": "Khaki",
         "hexCode": "#997a2c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-38.jpg",
         "id": "38"
       },
       {
         "name": "Deep Yellow",
         "hexCode": "#ffc617",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-4.jpg",
         "id": "4"
       },
       {
         "name": "Ivory",
         "hexCode": "#f7f0d4",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-114.jpg",
         "id": "114"
       },
       {
         "name": "Marigold",
         "hexCode": "#e6c746",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-67.jpg",
         "id": "67"
       },
       {
         "name": "Golden Yellow",
         "hexCode": "#ffd929",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-3.jpg",
         "id": "3"
       },
       {
         "name": "Clear Yellow",
         "hexCode": "#ffe333",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-3a.jpg",
         "id": "3A"
       },
       {
         "name": "Daffodil",
         "hexCode": "#fce332",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-165.jpg",
         "id": "165"
       },
       {
         "name": "Bright Yellow",
         "hexCode": "#fcf53f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-2.jpg",
         "id": "2"
       },
       {
         "name": "Citrus Yellow",
         "hexCode": "#f7f5a4",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-97.jpg",
         "id": "97"
       },
       {
         "name": "Mist Gray",
         "hexCode": "#dddddc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-139.jpg",
         "id": "139"
       },
       {
         "name": "Lemon Yellow",
         "hexCode": "#f5fc26",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-1.jpg",
         "id": "1"
       },
       {
         "name": "Chartreuse",
         "hexCode": "#d3e34c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-47.jpg",
         "id": "47"
       },
       {
         "name": "Herbaceous",
         "hexCode": "#a2ab61",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-182.jpg",
         "id": "182"
       },
       {
         "name": "Psychedelic Sunshine",
         "hexCode": "#ebff73",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-420.jpg",
         "id": "420"
       },
       {
         "name": "Wasabi",
         "hexCode": "#ccd98d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-143.jpg",
         "id": "143"
       },
       {
         "name": "Lime Squeeze",
         "hexCode": "#b4cc4b",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-149.jpg",
         "id": "149"
       },
       {
         "name": "Lime Pop",
         "hexCode": "#d4fa3e",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-183.jpg",
         "id": "183"
       },
       {
         "name": "Granny Apple",
         "hexCode": "#b4d96a",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-158.jpg",
         "id": "158"
       },
       {
         "name": "Muir Green",
         "hexCode": "#6d795d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-170.jpg",
         "id": "170"
       },
       {
         "name": "Moss Green",
         "hexCode": "#506b30",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-134.jpg",
         "id": "134"
       },
       {
         "name": "Charcoal Gray",
         "hexCode": "#7d807a",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-41.jpg",
         "id": "41"
       },
       {
         "name": "Avocado",
         "hexCode": "#689445",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-33.jpg",
         "id": "33"
       },
       {
         "name": "Electric Green",
         "hexCode": "#8dd962",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-177.jpg",
         "id": "177"
       },
       {
         "name": "Pewter",
         "hexCode": "#9da698",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-105.jpg",
         "id": "105"
       },
       {
         "name": "Olive Drab",
         "hexCode": "#596e53",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-32.jpg",
         "id": "32"
       },
       {
         "name": "Dragon's Heart",
         "hexCode": "#78a074",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-206.jpg",
         "id": "206"
       },
       {
         "name": "Sage Green",
         "hexCode": "#99ba99",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-140.jpg",
         "id": "140"
       },
       {
         "name": "Bright Green",
         "hexCode": "#78f078",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-29.jpg",
         "id": "29"
       },
       {
         "name": "Seafoam",
         "hexCode": "#e1f4e2",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-85.jpg",
         "id": "85"
       },
       {
         "name": "Kelly Green",
         "hexCode": "#38d964",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-66.jpg",
         "id": "66"
       },
       {
         "name": "Brushed Steel",
         "hexCode": "#969997",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-154.jpg",
         "id": "154"
       },
       {
         "name": "New Emerald Green",
         "hexCode": "#1c8c4d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-30a.jpg",
         "id": "30A"
       },
       {
         "name": "Sea Glass",
         "hexCode": "#9bd4b5",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-164.jpg",
         "id": "164"
       },
       {
         "name": "Dark Green",
         "hexCode": "#2f5e47",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-31.jpg",
         "id": "31"
       },
       {
         "name": "Forest Green",
         "hexCode": "#348e6f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-31a.jpg",
         "id": "31A"
       },
       {
         "name": "Celadon",
         "hexCode": "#92d1bc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-157.jpg",
         "id": "157"
       },
       {
         "name": "Mermaid's Dream",
         "hexCode": "#0c8e74",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-153.jpg",
         "id": "153"
       },
       {
         "name": "Better Blue Green",
         "hexCode": "#046653",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-28b.jpg",
         "id": "28B"
       },
       {
         "name": "Cayman Isle Green",
         "hexCode": "#52ccba",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-108.jpg",
         "id": "108"
       },
       {
         "name": "Parakeet",
         "hexCode": "#95e6dc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-151.jpg",
         "id": "151"
       },
       {
         "name": "Jade Green",
         "hexCode": "#35c4bb",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-50.jpg",
         "id": "50"
       },
       {
         "name": "Aqua Marine",
         "hexCode": "#249792",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-28a.jpg",
         "id": "28A"
       },
       {
         "name": "Alchemist",
         "hexCode": "#858787",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-202.jpg",
         "id": "202"
       },
       {
         "name": "Black Ice",
         "hexCode": "#707e7e",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-207.jpg",
         "id": "207"
       },
       {
         "name": "Raven Black",
         "hexCode": "#090d0d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-200.jpg",
         "id": "200"
       },
       {
         "name": "Robin's Egg Blue",
         "hexCode": "#91eded",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-80.jpg",
         "id": "80"
       },
       {
         "name": "Caribbean Blue",
         "hexCode": "#16a3ad",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-132.jpg",
         "id": "132"
       },
       {
         "name": "Glacier Blue",
         "hexCode": "#bbf7fc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-180.jpg",
         "id": "180"
       },
       {
         "name": "Kingfisher Blue",
         "hexCode": "#007e8c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-146.jpg",
         "id": "146"
       },
       {
         "name": "Turquoise",
         "hexCode": "#16c3db",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-25.jpg",
         "id": "25"
       },
       {
         "name": "Bahama Blue",
         "hexCode": "#00aac4",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-171.jpg",
         "id": "171"
       },
       {
         "name": "Blue Gray",
         "hexCode": "#b0bdbf",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-38a.jpg",
         "id": "38A"
       },
       {
         "name": "Thundercloud",
         "hexCode": "#424647",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-193.jpg",
         "id": "193"
       },
       {
         "name": "Grecian Sea",
         "hexCode": "#00789d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-162.jpg",
         "id": "162"
       },
       {
         "name": "Gun Metal Gray",
         "hexCode": "#5b6265",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-150.jpg",
         "id": "150"
       },
       {
         "name": "Baby Blue",
         "hexCode": "#a4d5eb",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-48.jpg",
         "id": "48"
       },
       {
         "name": "Teal Blue",
         "hexCode": "#225e7d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-21.jpg",
         "id": "21"
       },
       {
         "name": "Timber Wolf",
         "hexCode": "#6c7980",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-172.jpg",
         "id": "172"
       },
       {
         "name": "Peacock Blue",
         "hexCode": "#4799cc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-62.jpg",
         "id": "62"
       },
       {
         "name": "Electric Blue",
         "hexCode": "#106ca7",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-23a.jpg",
         "id": "23A"
       },
       {
         "name": "Cobalt Blue",
         "hexCode": "#0a3856",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-22.jpg",
         "id": "22"
       },
       {
         "name": "Wedgewood Blue",
         "hexCode": "#8babc0",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-76.jpg",
         "id": "76"
       },
       {
         "name": "Nebula Navy",
         "hexCode": "#093150",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-186.jpg",
         "id": "186"
       },
       {
         "name": "Alpine Blue",
         "hexCode": "#6ca9d9",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-77.jpg",
         "id": "77"
       },
       {
         "name": "Indigo Blue",
         "hexCode": "#1a4b73",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-168.jpg",
         "id": "168"
       },
       {
         "name": "Hot Black  (Hot Water)",
         "hexCode": "#263340",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-275.jpg",
         "id": "275"
       },
       {
         "name": "Cerulean Blue",
         "hexCode": "#1f6fbf",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-23.jpg",
         "id": "23"
       },
       {
         "name": "Blueberry",
         "hexCode": "#22456d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-160.jpg",
         "id": "160"
       },
       {
         "name": "Royal Blue",
         "hexCode": "#1c4d8c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-95.jpg",
         "id": "95"
       },
       {
         "name": "Sky Blue",
         "hexCode": "#8dadd9",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-26.jpg",
         "id": "26"
       },
       {
         "name": "Bluebird",
         "hexCode": "#3270c8",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-188.jpg",
         "id": "188"
       },
       {
         "name": "Sapphire Blue",
         "hexCode": "#174999",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-70.jpg",
         "id": "70"
       },
       {
         "name": "New Black",
         "hexCode": "#363d4d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-300.jpg",
         "id": "300"
       },
       {
         "name": "Brilliant Blue",
         "hexCode": "#6a85cc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-46.jpg",
         "id": "46"
       },
       {
         "name": "Blue Abyss",
         "hexCode": "#1f2a49",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-191.jpg",
         "id": "191"
       },
       {
         "name": "Houdini Blue",
         "hexCode": "#344ead",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-192.jpg",
         "id": "192"
       },
       {
         "name": "Deep Space",
         "hexCode": "#303550",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-173.jpg",
         "id": "173"
       },
       {
         "name": "Navy Blue",
         "hexCode": "#394066",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-24.jpg",
         "id": "24"
       },
       {
         "name": "Strong Navy",
         "hexCode": "#1b215f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-130.jpg",
         "id": "130"
       },
       {
         "name": "Ice Blue",
         "hexCode": "#c8cae3",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-61.jpg",
         "id": "61"
       },
       {
         "name": "Midnight Blue",
         "hexCode": "#3e4276",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-27.jpg",
         "id": "27"
       },
       {
         "name": "Silver Lining",
         "hexCode": "#cacacc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-184.jpg",
         "id": "184"
       },
       {
         "name": "Neutral Grey (Hot Water)",
         "hexCode": "#a8a8ad",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-175.jpg",
         "id": "175"
       },
       {
         "name": "Periwinkle",
         "hexCode": "#8585cc",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-112.jpg",
         "id": "112"
       },
       {
         "name": "Interstellar",
         "hexCode": "#7e7890",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-204.jpg",
         "id": "204"
       },
       {
         "name": "Wisteria",
         "hexCode": "#d3c8e0",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-83.jpg",
         "id": "83"
       },
       {
         "name": "Better Black",
         "hexCode": "#362e3d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-44.jpg",
         "id": "44"
       },
       {
         "name": "Nightshade",
         "hexCode": "#604079",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-185.jpg",
         "id": "185"
       },
       {
         "name": "Hydrangea",
         "hexCode": "#af8dc9",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-159.jpg",
         "id": "159"
       },
       {
         "name": "Lilac",
         "hexCode": "#8f6baa",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-19a.jpg",
         "id": "19A"
       },
       {
         "name": "Power Berry",
         "hexCode": "#553a67",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-161.jpg",
         "id": "161"
       },
       {
         "name": "Imperial Purple",
         "hexCode": "#4c305a",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-131.jpg",
         "id": "131"
       },
       {
         "name": "Ultra Violet",
         "hexCode": "#693980",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-18a.jpg",
         "id": "18A"
       },
       {
         "name": "Lavender",
         "hexCode": "#c3a9ce",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-60.jpg",
         "id": "60"
       },
       {
         "name": "Grape",
         "hexCode": "#8d4295",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-117.jpg",
         "id": "117"
       },
       {
         "name": "Deep Purple",
         "hexCode": "#732479",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-18.jpg",
         "id": "18"
       },
       {
         "name": "Blue Violet",
         "hexCode": "#8a1f91",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-43.jpg",
         "id": "43"
       },
       {
         "name": "Plum",
         "hexCode": "#7d1a73",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-19.jpg",
         "id": "19"
       },
       {
         "name": "Kaleidoscope Eyes",
         "hexCode": "#A695A2",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-201.jpg",
         "id": "201"
       },
       {
         "name": "Orchid",
         "hexCode": "#d482bf",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-64.jpg",
         "id": "64"
       },
       {
         "name": "Avalon",
         "hexCode": "#71636d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-209.jpg",
         "id": "209"
       },
       {
         "name": "Red Violet",
         "hexCode": "#a63a85",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-119.jpg",
         "id": "119"
       },
       {
         "name": "Magenta Galactica",
         "hexCode": "#b33284",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-189.jpg",
         "id": "189"
       },
       {
         "name": "Amethyst",
         "hexCode": "#b31b72",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-15.jpg",
         "id": "15"
       },
       {
         "name": "Black Cherry",
         "hexCode": "#802053",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-111.jpg",
         "id": "111"
       },
       {
         "name": "Peony",
         "hexCode": "#eb9cc5",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-174.jpg",
         "id": "174"
       },
       {
         "name": "Eggplant",
         "hexCode": "#662947",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-115.jpg",
         "id": "115"
       },
       {
         "name": "Sweet Pea",
         "hexCode": "#EFBAD3",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-187.jpg",
         "id": "187"
       },
       {
         "name": "Raspberry",
         "hexCode": "#ba396f",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-65.jpg",
         "id": "65"
       },
       {
         "name": "Plum Blossom",
         "hexCode": "#d9a3b8",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-51.jpg",
         "id": "51"
       },
       {
         "name": "Light Red",
         "hexCode": "#e61767",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-12.jpg",
         "id": "12"
       },
       {
         "name": "Dragon Fruit",
         "hexCode": "#e64381",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-152.jpg",
         "id": "152"
       },
       {
         "name": "Fuchsia Red",
         "hexCode": "#cc2162",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-13.jpg",
         "id": "13"
       },
       {
         "name": "Maroon",
         "hexCode": "#990f3d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-16.jpg",
         "id": "16"
       },
       {
         "name": "Hot Hibiscus",
         "hexCode": "#fa467d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-181.jpg",
         "id": "181"
       },
       {
         "name": "Hot Pink",
         "hexCode": "#ff80a6",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-14a.jpg",
         "id": "14A"
       },
       {
         "name": "Red Wine",
         "hexCode": "#b31b46",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-49.jpg",
         "id": "49"
       },
       {
         "name": "Baby Pink",
         "hexCode": "#f2a1b6",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-12a.jpg",
         "id": "12A"
       },
       {
         "name": "Dances With Raisins",
         "hexCode": "#99364d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-145.jpg",
         "id": "145"
       },
       {
         "name": "Truffle Brown",
         "hexCode": "#6d5056",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-135.jpg",
         "id": "135"
       },
       {
         "name": "Cardinal Red",
         "hexCode": "#bf344d",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-163.jpg",
         "id": "163"
       },
       {
         "name": "Bubble Gum",
         "hexCode": "#fabcc6",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-98.jpg",
         "id": "98"
       },
       {
         "name": "Fire Red",
         "hexCode": "#da122e",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-10.jpg",
         "id": "10"
       },
       {
         "name": "Burgundy",
         "hexCode": "#b32d3e",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-17.jpg",
         "id": "17"
       },
       {
         "name": "Pomegranate",
         "hexCode": "#bd2e37",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-148.jpg",
         "id": "148"
       },
       {
         "name": "Powder Pink",
         "hexCode": "#deb9bb",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-176.jpg",
         "id": "176"
       },
       {
         "name": "Dye-namite",
         "hexCode": "#cc2529",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-194.jpg",
         "id": "194"
       },
       {
         "name": "Chinese Red",
         "hexCode": "#eb070c",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-10a.jpg",
         "id": "10A"
       }
     ],

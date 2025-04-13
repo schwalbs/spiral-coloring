@@ -1,3 +1,9 @@
+export const buildIceDyeImgSrc = (colorId) =>
+  `https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-${colorId.toLowerCase()}.jpg`;
+
+const objToArray = (obj) =>
+  Array.from({ ...obj, length: Object.keys(obj).length });
+
 export default async function buildDharmaColors() {
   const [colorsRaw, colorsDetailsRaw] = await Promise.all(
     [
@@ -5,9 +11,6 @@ export default async function buildDharmaColors() {
       "https://www.dharmatrading.com/json/products/down/950/6/3796-AA.js",
     ].map((url) => fetch(url).then((response) => response.json())),
   );
-
-  const objToArray = (obj) =>
-    Array.from({ ...obj, length: Object.keys(obj).length });
 
   const colorDetails = colorsDetailsRaw.linksdown[950][0].variants;
   const colorHexCodeByColor = colorDetails.reduce(
@@ -32,6 +35,7 @@ export default async function buildDharmaColors() {
           .replace(/(^[A-Za-z0-9]+ : | - .*$|\*|\(\w\))/g, "")
           .trim(),
         hexCode: colorHexCodeByColor[color.vcode] ?? "#ffffff",
+        iceDyeImgSrc: buildIceDyeImgSrc(color.vcode),
         id: color.vcode,
       };
     });
