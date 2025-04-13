@@ -70,5 +70,5 @@ Refer to `./src/types/colors.ts` for expected formats.
 - [ ] Active color indicator
 - [ ] Tech improvements
   - [ ] Infer hex color from dye image
-  - [ ] Move vite allowed hosts to .env
+  - [x] ~~Move vite allowed hosts to .env~~
   - [ ] Commit linter

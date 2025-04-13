@@ -1,11 +1,14 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv, type ConfigEnv } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: "/spiral-coloring/",
-  server: {
-    allowedHosts: ["raspberrypi"],
-  },
-});
+export default ({ mode }: ConfigEnv) => {
+  const env = loadEnv(mode, __dirname, "");
+
+  return defineConfig({
+    plugins: [react()],
+    base: "/spiral-coloring/",
+    server: {
+      allowedHosts: env.ALLOWED_HOSTS?.split(",") ?? undefined,
+    },
+  });
+};
