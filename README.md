@@ -80,3 +80,4 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Commit linter
   - [ ] Error boundaries
   - [ ] Better error handling when building colors
+  - [ ] Workers for each manufacturer builder
