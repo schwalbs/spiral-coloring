@@ -1,12 +1,6 @@
 import { ChangeEventHandler, FC, useContext } from "react";
 import { AppStateContext } from "../../context/AppStateContext";
 
-/**
- * TODO: add controls for spin direction, blend amount
- * TODO: add filters by color group, brand,
- * TODO: add remove color
- * TODO: add clear shirt
- */
 const SpiralControls: FC = () => {
   const { dyeStyle, set, shirt } = useContext(AppStateContext);
 

@@ -12,10 +12,6 @@ const getXYFromRadians = (radians: number): [number, number] => {
   ];
 };
 
-/**
- * TODO add background to represent shirt
- * TODO rotate to reflect shirt
- */
 const DyePlacementDiagram: FC = () => {
   const { selectedColor, set, shirt } = useContext(AppStateContext);
 

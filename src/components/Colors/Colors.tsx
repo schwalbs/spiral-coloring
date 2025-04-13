@@ -4,14 +4,6 @@ import ColorBlock from "../ColorBlock";
 import { AppStateContext } from "../../context/AppStateContext";
 import styles from "./Colors.module.css";
 
-/**
- * TODO: add jaquard https://www.jacquardproducts.com/procion-mx
- * TODO: add pro chemical https://prochemicalanddye.com/
- * TODO: add custom colors https://customcoloursinc.storenvy.com/
- * TODO: add happy cat dyes https://www.happycattiedye.com/shop/category/dyes
- * TODO: add grateful dyes https://www.grateful-dyes.com/fabric-dyes/
- * TODO: add section collapse
- */
 const Colors: FC = () => {
   const { selectedColor, set } = useContext(AppStateContext);
   const [dyeCompanies, setDyeCompanies] = useState<Company[] | null>(null);
