@@ -5,7 +5,7 @@ This app is a tool to visualize how applying dye to a folded spiral shirt will r
 Color manufacturers currently supported:
 
 - [Dharma trading company](https://www.dharmatrading.com/dyes/dharma-fiber-reactive-procion-dyes.html)
-- [Pro Chem and Dye](https://prochemicalanddye.com/)
+- [Pro Chem and Dye](https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/)
 
 ## Development
 
@@ -81,3 +81,4 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Error boundaries
   - [ ] Better error handling when building colors
   - [ ] Workers for each manufacturer builder
+  - [ ] Dye manufacturer JSON validation

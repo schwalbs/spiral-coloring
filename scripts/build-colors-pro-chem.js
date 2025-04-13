@@ -48,6 +48,7 @@ async function buildProChemColors() {
 
   return {
     name: "Pro Chem & Dye",
+    siteHref: "https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/",
     colors,
   };
 }
