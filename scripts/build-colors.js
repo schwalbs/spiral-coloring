@@ -3,7 +3,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { sortFn as byColor } from "color-sorter";
 
-import buildDharmaColors from "./build-dharma-colors.js";
+import buildDharmaColors from "./build-colors-dharma.js";
 
 const MANUFACTURER_BUILDERS = {
   dharma: buildDharmaColors,
