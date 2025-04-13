@@ -1,8 +1,7 @@
-// const colorsOrganizationHref = 'https://www.dharmatrading.com/templates/eng/html/colorwizards/procion-col.js';
-// const colorsHexHref = 'https://www.dharmatrading.com/json/products/down/950/6/3796-AA.js';
 import * as fs from "fs";
 import * as path from "path";
 import * as prettier from "prettier";
+import { sortFn as byColor } from "color-sorter";
 
 const [colorsRaw, colorsDetailsRaw] = await Promise.all(
   [
@@ -26,8 +25,8 @@ const colorHexCodeByColor = colorDetails.reduce(
 );
 
 const colorSections = objToArray(colorsRaw);
-const colorsByCategory = colorSections.reduce(
-  (colorCategoryMapBuilder, colorCategory) => {
+const allColors = colorSections
+  .reduce((allColorsBuilder, colorCategory) => {
     const categoryTitle = colorCategory.title;
     const categoryPositions = Object.keys(colorCategory.variants);
 
@@ -41,25 +40,28 @@ const colorsByCategory = colorSections.reduce(
             .trim(),
           hexCode: colorHexCodeByColor[color.vcode] ?? "#ffffff",
           id: color.vcode,
-          category: categoryTitle,
           displayOrder: parseInt(key),
         };
       })
       .sort((a, b) => a.displayOrder - b.displayOrder);
 
-    return [
-      ...colorCategoryMapBuilder,
-      { name: categoryTitle, colors: categoryColors },
-    ];
-  },
-  [],
-);
+    return [...allColorsBuilder, ...categoryColors];
+  }, [])
+  .sort((a, b) => byColor(a.hexCode, b.hexCode));
 
 const formattedOutput = await prettier.format(
-  JSON.stringify(colorsByCategory),
+  JSON.stringify([
+    {
+      name: "Dharma Trading Company",
+      colors: allColors,
+      siteHref:
+        "https://www.dharmatrading.com/dyes/dharma-fiber-reactive-procion-dyes.html",
+    },
+  ]),
   { parser: "json-stringify" },
 );
 
+// TODO inject instead of overwrite
 fs.writeFile(
   path.join(import.meta.dirname, "../public/colors-compiled.json"),
   formattedOutput,

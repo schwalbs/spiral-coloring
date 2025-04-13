@@ -1,11 +1,8 @@
 import { FC, useContext, useEffect, useState } from "react";
-import { Color, ColorCategory } from "../../types/globals";
+import { Company } from "../../types/globals";
 import ColorBlock from "../ColorBlock";
 import { AppStateContext } from "../../context/appStateContext";
 import "./Colors.css";
-
-const byDisplayOrder = (a: Color, b: Color): number =>
-  a.displayOrder - b.displayOrder;
 
 /**
  * TODO: add jaquard https://www.jacquardproducts.com/procion-mx
@@ -13,12 +10,11 @@ const byDisplayOrder = (a: Color, b: Color): number =>
  * TODO: add custom colors https://customcoloursinc.storenvy.com/
  * TODO: add happy cat dyes https://www.happycattiedye.com/shop/category/dyes
  * TODO: add grateful dyes https://www.grateful-dyes.com/fabric-dyes/
+ * TODO: add section collapse
  */
 const Colors: FC = () => {
   const { selectedColor, set } = useContext(AppStateContext);
-  const [colorCategories, setColorCategories] = useState<
-    ColorCategory[] | null
-  >(null);
+  const [dyeCompanies, setDyeCompanies] = useState<Company[] | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -27,18 +23,22 @@ const Colors: FC = () => {
       );
       const loadedColors = await loadedColorsRequest.json();
 
-      setColorCategories(loadedColors);
+      setDyeCompanies(loadedColors);
     })();
   }, []);
 
   return (
     <div className="colors">
-      {colorCategories == null && <span>Loading colors...</span>}
-      {colorCategories?.map((category) => (
-        <div className="block" key={category.name}>
-          <h3 className="subtitle is-4 is-size-5-mobile">{category.name}</h3>
+      {dyeCompanies == null && <span>Loading colors...</span>}
+      {dyeCompanies?.map((company) => (
+        <div className="block" key={company.name}>
+          <h3 className="subtitle is-4 is-size-5-mobile is-underlined">
+            <a href={company.siteHref} target="_blank">
+              {company.name}
+            </a>
+          </h3>
           <div className="colors__color-grid grid is-gap-1">
-            {category.colors.sort(byDisplayOrder).map((color) => (
+            {company.colors.map((color) => (
               <div className="cell colors__color" key={color.id}>
                 <ColorBlock
                   color={color}
