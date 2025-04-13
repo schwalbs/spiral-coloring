@@ -27,7 +27,6 @@ const colorHexCodeByColor = colorDetails.reduce(
 const colorSections = objToArray(colorsRaw);
 const allColors = colorSections
   .reduce((allColorsBuilder, colorCategory) => {
-    const categoryTitle = colorCategory.title;
     const categoryPositions = Object.keys(colorCategory.variants);
 
     const categoryColors = categoryPositions

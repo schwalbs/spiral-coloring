@@ -6,6 +6,7 @@ const proChemPageStr = await fetch(
 
 const doc = parse(proChemPageStr, "text/html");
 
+// eslint-disable-next-line
 const colors = doc
   .querySelectorAll("table tr")
   .map((productTableRowElement, index) => {
@@ -29,14 +30,14 @@ const colors = doc
       name,
     };
 
-    const threeChipImgUrl = cellElements[0]
-      .querySelector("[data-url]")
-      .getAttribute("data-url");
+    // const threeChipImgUrl = cellElements[0]
+    //   .querySelector("[data-url]")
+    //   .getAttribute("data-url");
 
     return color;
   });
 
-const formattedColors = {
-  name: "Pro Chem & Dye",
-  colors,
-};
+// const formattedColors = {
+//   name: "Pro Chem & Dye",
+//   colors,
+// };
