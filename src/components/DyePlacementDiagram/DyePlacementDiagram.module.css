@@ -1,10 +1,10 @@
-.dye-placement-diagram {
+.container {
   inline-size: 75%;
   block-size: 75%;
   aspect-ratio: 1/1;
 }
 
-.dye-placement-diagram__slice-path {
+.slicePath {
   pointer-events: all;
   cursor: pointer;
 }

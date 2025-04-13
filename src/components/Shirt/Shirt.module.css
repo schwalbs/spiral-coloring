@@ -4,12 +4,12 @@
   aspect-ratio: 1;
 }
 
-.shirt__img {
+.img {
   width: 100%;
   display: block;
 }
 
-.shirt__spiral-svg {
+.spiralSvg {
   position: absolute;
   top: 0;
   left: 0;

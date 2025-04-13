@@ -1,8 +1,8 @@
 import { useContext, type FC } from "react";
-import "./Shirt.css";
 import { AppStateContext } from "../../context/AppStateContext";
 import buildSpiralPaths from "./buildSpiralPaths";
 import { buildIceDyeSwatchUrl } from "../../utils/dharma";
+import styles from "./Shirt.module.css";
 
 const VIEWBOX_SIZE = 500;
 
@@ -25,9 +25,9 @@ const Shirt: FC = () => {
   };
 
   return (
-    <div className="shirt">
+    <div className={styles.shirt}>
       <svg
-        className="shirt__spiral-svg"
+        className={styles.shirtSvg}
         viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"

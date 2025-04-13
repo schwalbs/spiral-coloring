@@ -1,8 +1,8 @@
 import { FC, useContext, useEffect, useState } from "react";
 import { Company } from "../../types/colors";
 import ColorBlock from "../ColorBlock";
-import { AppStateContext } from "../../context/AppStateContext/AppStateContext";
-import "./Colors.css";
+import { AppStateContext } from "../../context/AppStateContext";
+import styles from "./Colors.module.css";
 
 /**
  * TODO: add jaquard https://www.jacquardproducts.com/procion-mx
@@ -37,9 +37,9 @@ const Colors: FC = () => {
               {company.name}
             </a>
           </h3>
-          <div className="colors__color-grid grid is-gap-1">
+          <div className={`${styles.colorGrid} grid is-gap-1`}>
             {company.colors.map((color) => (
-              <div className="cell colors__color" key={color.id}>
+              <div className="cell" key={color.id}>
                 <ColorBlock
                   color={color}
                   isSelected={color.id === selectedColor?.id}

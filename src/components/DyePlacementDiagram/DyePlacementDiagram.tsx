@@ -1,6 +1,6 @@
 import { useContext, type FC } from "react";
-import "./DyePlacementDiagram.css";
 import { AppStateContext } from "../../context/AppStateContext";
+import styles from "./DyePlacementDiagram.module.css";
 
 const VIEW_BOX_SIZE = 500;
 const SPIRAL_RADIUS = VIEW_BOX_SIZE / 2;
@@ -28,7 +28,7 @@ const DyePlacementDiagram: FC = () => {
   };
 
   return (
-    <div className="dye-placement-diagram">
+    <div className={styles.container}>
       <svg
         viewBox={`0 0 ${VIEW_BOX_SIZE} ${VIEW_BOX_SIZE}`}
         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const DyePlacementDiagram: FC = () => {
           r={VIEW_BOX_SIZE / 2}
           stroke="#fff"
           strokeWidth="0.5"
-          className="dye-placement-diagram__slice-path"
+          className={styles.slicePath}
           fill={
             shirt.numSpirals === 1 && shirt.spirals[0]
               ? shirt.spirals[0].hexCode
@@ -60,7 +60,7 @@ const DyePlacementDiagram: FC = () => {
 
             return (
               <path
-                className="dye-placement-diagram__slice-path"
+                className={styles.slicePath}
                 key={section}
                 d={`M ${SPIRAL_CENTER} L ${arcStartXY.join(",")} A ${SPIRAL_CENTER},0,0,1,${arcEndXY.join(",")} z`}
                 stroke={spiral ? spiral.hexCode : "#14161a"}

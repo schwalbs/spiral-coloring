@@ -1,4 +1,10 @@
-.main-content {
+:global html,
+:global body,
+:global #root {
+  height: 100%;
+}
+
+.mainContent {
   margin-inline: auto;
   display: grid;
   grid-template-areas:
@@ -11,24 +17,23 @@
   overflow: hidden;
 }
 
-.shirt-output-container {
+.shirtOutputContainer {
   grid-area: shirt-output;
-  display: flex;
   border-block-end: 2px solid var(--bulma-border);
 }
 
-.controls-container {
+.controlsContainer {
   grid-area: controls;
   border-block-end: 2px solid var(--bulma-border);
 }
 
-.colors-container {
+.colorsContainer {
   grid-area: colors;
   overflow: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .main-content {
+  .mainContent {
     grid-template-rows: auto 1fr 1fr;
     grid-template-columns: 20rem 1fr 1fr;
     grid-template-areas:
@@ -36,9 +41,8 @@
       "shirt-output colors colors";
   }
 
-  .shirt-output-container {
+  .shirtOutputContainer {
     grid-area: shirt-output;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -49,11 +53,11 @@
     align-items: stretch;
   }
 
-  .controls-container {
+  .controlsContainer {
     border-inline-start: 2px solid var(--bulma-border);
   }
 
-  .colors-container {
+  .colorsContainer {
     overflow: auto;
     border-inline-start: 2px solid var(--bulma-border);
   }

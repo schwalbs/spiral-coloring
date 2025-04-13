@@ -1,9 +1,9 @@
-.colors__color-grid {
+.colorGrid {
   grid-template-columns: repeat(auto-fit, 7rem);
 }
 
 @media screen and (min-width: 768px) {
-  .colors__color-grid {
+  .colorGrid {
     grid-template-columns: repeat(auto-fit, var(--bulma-grid-column-min));
   }
 }
