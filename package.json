@@ -9,9 +9,10 @@
     "colors:pro-chem": "npm run colors -- pro-chem",
     "colors": "node ./scripts/build-colors.js",
     "build:clean": "rm -rf dist/",
+    "build:pwa-assets": "pwa-assets-generator",
     "prebuild": "npm run build:clean",
     "build": "tsc -b && vite build",
-    "predeploy": "concurrently --names build,colors -c green,magenta \"npm run build\" \"npm run colors\"",
+    "predeploy": "concurrently --names pwa-assets,build,colors -c blue,green,magenta \"npm run build:pwa-assets\" \"npm run build\" \"npm run colors\"",
     "deploy": "gh-pages -d dist",
     "lint": "eslint . --fix",
     "preview": "vite preview",
@@ -22,7 +23,7 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "!(*.ts|*.js|*.tsx|.husky/**/*)": "prettier --write"
+    "*.{json,md}": "prettier --write"
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
@@ -35,6 +36,7 @@
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.2",
+    "@vite-pwa/assets-generator": "^1.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "canvas": "^3.1.0",
     "color-sorter": "^7.0.0",
@@ -51,6 +53,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1",
-    "vite": "^6.2.6"
+    "vite": "^6.2.6",
+    "vite-plugin-pwa": "^1.0.0"
   }
 }
