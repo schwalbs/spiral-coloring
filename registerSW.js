@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/spiral-coloring/sw.js', { scope: '/spiral-coloring/' })})}
