@@ -27,7 +27,7 @@
   border-block-end: 2px solid var(--bulma-border);
 }
 
-.colorsContainer {
+.companiesContainer {
   grid-area: colors;
   overflow: auto;
 }
@@ -55,7 +55,7 @@
     border-inline-start: 2px solid var(--bulma-border);
   }
 
-  .colorsContainer {
+  .companiesContainer {
     overflow: auto;
     border-inline-start: 2px solid var(--bulma-border);
   }

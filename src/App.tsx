@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import DyePlacementDiagram from "./components/DyePlacementDiagram";
-import Colors from "./components/Colors";
+import Companies from "./components/Companies";
 import Shirt from "./components/Shirt/Shirt";
 import SpiralControls from "./components/SpiralControls";
 import { AppStateContextProvider } from "./context/AppStateContext";
@@ -23,8 +23,8 @@ const App: FC = () => {
         <div className={`${styles.controlsContainer} p-4`}>
           <SpiralControls />
         </div>
-        <div className={`${styles.colorsContainer} px-4`}>
-          <Colors />
+        <div className={`${styles.companiesContainer} px-4`}>
+          <Companies />
         </div>
       </section>
     </AppStateContextProvider>

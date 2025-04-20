@@ -4,7 +4,7 @@ import { mdiOpenInNew } from "@mdi/js";
 import { Company } from "../../types/colors";
 import ColorBlock from "../ColorBlock";
 import { AppStateContext } from "../../context/AppStateContext";
-import styles from "./Colors.module.css";
+import styles from "./Companies.module.css";
 
 const Colors: FC = () => {
   const { selectedColor, set } = useContext(AppStateContext);
@@ -27,7 +27,7 @@ const Colors: FC = () => {
       {dyeCompanies?.map((company) => (
         <div className="block" key={company.name}>
           <h3
-            className={`${styles.manufacturerName} subtitle has-background-black-bis is-4 is-size-5-mobile py-4 mb-1`}
+            className={`${styles.companyName} subtitle has-background-black-bis is-4 is-size-5-mobile py-4 mb-1`}
           >
             {company.name}
             <a
