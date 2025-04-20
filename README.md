@@ -58,7 +58,7 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] [Custom Colors](https://customcoloursinc.storenvy.com/)
   - [ ] [Happy Cat Dyes](https://www.happycattiedye.com/shop/category/dyes)
   - [ ] [Grateful Dyes](https://www.grateful-dyes.com/fabric-dyes/)
-- [ ] Collapsable manufacturer sections
+- [x] ~~Collapsable manufacturer sections~~
 - [ ] Additional controls
   - [ ] Spiral direction
   - [ ] Reset shirt

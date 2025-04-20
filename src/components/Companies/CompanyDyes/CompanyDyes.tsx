@@ -60,7 +60,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
             title={`Open ${company.name} dye page in a new tab`}
             onClick={handleCompanyPageLinkClick}
           >
-            <Icon path={mdiOpenInNew} aria-hidden="true" size={0.67} />
+            <Icon path={mdiOpenInNew} aria-hidden="true" size="1rem" />
           </a>
         </h3>
         <div>
@@ -74,7 +74,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
               path={mdiChevronDown}
               className={`${styles.toggleButtonIcon} icon`}
               aria-hidden="true"
-              size={1}
+              size="1.5rem"
               rotate={!isExpanded ? 180 : undefined}
             />
           </button>
