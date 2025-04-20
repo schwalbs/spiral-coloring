@@ -1,7 +1,7 @@
 import { FC, MouseEventHandler, useContext } from "react";
-import { Color } from "../../types/colors";
+import { Color } from "../../../types/colors";
 import styles from "./ColorBlock.module.css";
-import { AppStateContext } from "../../context/AppStateContext";
+import { AppStateContext } from "../../../context/AppStateContext";
 
 type Props = {
   color: Color;
