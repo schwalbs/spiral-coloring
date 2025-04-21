@@ -39,6 +39,7 @@
     "@vite-pwa/assets-generator": "^1.0.0",
     "@vitejs/plugin-react": "^4.4.0",
     "canvas": "^3.1.0",
+    "chalk": "^5.4.1",
     "color-sorter": "^7.0.0",
     "concurrently": "^9.1.2",
     "eslint": "^9.24.0",

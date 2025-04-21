@@ -43,14 +43,14 @@ const Shirt: FC = () => {
               <pattern
                 id={`spiral-ice-img-${section}`}
                 key={section}
-                height="500"
-                width="500"
+                height={VIEWBOX_SIZE}
+                width={VIEWBOX_SIZE}
                 patternUnits="userSpaceOnUse"
               >
                 <image
-                  preserveAspectRatio="xMidYMid meet"
-                  height="500"
-                  width="500"
+                  preserveAspectRatio="xMaxYMin slice"
+                  height={VIEWBOX_SIZE}
+                  width={VIEWBOX_SIZE}
                   href={color.iceDyeImgSrc}
                 />
               </pattern>

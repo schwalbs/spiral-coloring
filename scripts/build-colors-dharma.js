@@ -1,3 +1,9 @@
+import chalk from "chalk";
+
+const log = (message) => {
+  console.log(`${chalk.cyan("[dharma]")} ${message}`);
+};
+
 export const buildIceDyeImgSrc = (colorId) =>
   `https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-${colorId.toLowerCase()}.jpg`;
 
@@ -5,6 +11,9 @@ const objToArray = (obj) =>
   Array.from({ ...obj, length: Object.keys(obj).length });
 
 export default async function buildDharmaColors() {
+  log("starting");
+
+  log("fetching color data");
   const [colorsRaw, colorsDetailsRaw] = await Promise.all(
     [
       "https://www.dharmatrading.com/templates/eng/html/colorwizards/procion-col.js",
@@ -23,6 +32,7 @@ export default async function buildDharmaColors() {
     {},
   );
 
+  log("building color array");
   const colorSections = objToArray(colorsRaw);
   const allColors = colorSections.reduce((allColorsBuilder, colorCategory) => {
     const categoryPositions = Object.keys(colorCategory.variants);
@@ -42,6 +52,8 @@ export default async function buildDharmaColors() {
 
     return [...allColorsBuilder, ...categoryColors];
   }, []);
+
+  log("finished");
 
   return {
     name: "Dharma Trading Company",

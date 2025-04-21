@@ -1,7 +1,14 @@
 import { parse } from "node-html-parser";
+import chalk from "chalk";
 import getHexCodeFromImage from "./utils/getHexCodeFromImage.js";
 
+const log = (message) => {
+  console.log(`${chalk.yellow("[pro-chem]")} ${message}`);
+};
+
 async function buildProChemColors() {
+  log("starting");
+  log("fetching dye page");
   const proChemPageStr = await fetch(
     "https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/",
   ).then((response) => response.text());
@@ -10,6 +17,7 @@ async function buildProChemColors() {
 
   const hexCodePromises = [];
 
+  log("parsing page to build colors array");
   const colors = doc
     .querySelectorAll("table tr")
     .reduce((acc, productTableRowElement) => {
@@ -26,15 +34,17 @@ async function buildProChemColors() {
         ``,
       );
 
+      const colorImgUrl = cellElements[0]
+        .querySelector("img")
+        .getAttribute("data-src");
+
       const color = {
         hexCode: "#000000",
         id,
         name,
+        iceDyeImgSrc: colorImgUrl.replace(/-[0-9]+x[0-9]+\.jpg$/g, ".jpg"),
       };
 
-      const colorImgUrl = cellElements[0]
-        .querySelector("img")
-        .getAttribute("data-src");
       hexCodePromises.push(
         getHexCodeFromImage(colorImgUrl).then((hexCode) => {
           color.hexCode = hexCode;
@@ -44,12 +54,19 @@ async function buildProChemColors() {
       return [...acc, color];
     }, []);
 
+  log("waiting to resolve hex codes");
   await Promise.all(hexCodePromises);
+
+  log("finished");
 
   return {
     name: "Pro Chem & Dye",
     siteHref: "https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/",
     colors,
+    iceDyeImageStyles: {
+      backgroundSize: "350%",
+      backgroundPosition: "top right",
+    },
   };
 }
 

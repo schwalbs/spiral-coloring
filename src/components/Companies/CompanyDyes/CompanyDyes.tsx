@@ -43,7 +43,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
   return (
     <div className={`block mb-0`}>
       <div
-        className={`${styles.companyNameContainer} is-clickable has-background-black-bis is-flex is-justify-content-space-between is-align-items-center`}
+        className={`${styles.companyNameContainer} is-clickable px-4 has-background-black-bis is-flex is-justify-content-space-between is-align-items-center`}
         onClick={handleNameContainerClick}
       >
         <h3 className={`subtitle is-4 is-size-5-mobile py-4 mb-0`}>
@@ -80,7 +80,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
       </div>
       <div className="is-clipped" ref={colorGridContainerRef}>
         <div
-          className={`${styles.colorGrid} grid is-gap-1 is-clipped`}
+          className={`${styles.colorGrid} grid is-gap-1 px-4 py-1`}
           ref={colorGridRef}
           aria-hidden={!isExpanded}
         >
@@ -88,6 +88,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
             <div className="cell" key={color.id}>
               <ColorBlock
                 color={color}
+                iceDyeImgStyles={company.iceDyeImageStyles}
                 isSelected={color.id === selectedColor?.id}
                 onClick={() => {
                   set.selectedColor(color);

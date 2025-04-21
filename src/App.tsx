@@ -23,7 +23,7 @@ const App: FC = () => {
         <div className={`${styles.controlsContainer} p-4`}>
           <SpiralControls />
         </div>
-        <div className={`${styles.companiesContainer} px-4`}>
+        <div className={`${styles.companiesContainer}`}>
           <Companies />
         </div>
       </section>

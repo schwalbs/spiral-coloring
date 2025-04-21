@@ -1,5 +1,5 @@
 import { FC, MouseEventHandler, useContext } from "react";
-import { Color } from "../../../types/colors";
+import { Color, Company } from "../../../types/colors";
 import styles from "./ColorBlock.module.css";
 import { AppStateContext } from "../../../context/AppStateContext";
 
@@ -7,9 +7,15 @@ type Props = {
   color: Color;
   isSelected?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  iceDyeImgStyles?: Company["iceDyeImageStyles"];
 };
 
-const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
+const ColorBlock: FC<Props> = ({
+  color,
+  iceDyeImgStyles,
+  isSelected,
+  onClick,
+}) => {
   const { dyeStyle: style } = useContext(AppStateContext);
 
   return (
@@ -23,6 +29,7 @@ const ColorBlock: FC<Props> = ({ color, isSelected, onClick }) => {
           style === "ice" && color.iceDyeImgSrc
             ? `url(${color.iceDyeImgSrc})`
             : undefined,
+        ...iceDyeImgStyles,
       }}
     >
       <span
