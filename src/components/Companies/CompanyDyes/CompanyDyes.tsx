@@ -1,4 +1,4 @@
-import { FC, useContext, useRef, useState } from "react";
+import { FC, MouseEventHandler, useContext, useRef, useState } from "react";
 import Icon from "@mdi/react";
 import { mdiChevronDown, mdiOpenInNew } from "@mdi/js";
 import styles from "./CompanyDyes.module.css";
@@ -11,26 +11,24 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
   const { set, selectedColor } = useContext(AppStateContext);
   const [isExpanded, setIsExpanded] = useState(true);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const colorGridContainerRef = useRef<HTMLDivElement>(null);
   const colorGridRef = useRef<HTMLDivElement>(null);
-  const colorGridExpandedHeight = useRef(0);
 
-  const handleToggleButtonClick = () => {
+  const handleToggleButtonClick: MouseEventHandler = (event) => {
+    event.stopPropagation();
+
     setIsExpanded((prev) => !prev);
 
+    const colorGridContainerElement = colorGridContainerRef.current;
     const colorGridElement = colorGridRef.current;
-
-    if (!colorGridElement) {
+    if (!colorGridElement || !colorGridContainerElement) {
       return;
     }
 
-    if (isExpanded) {
-      colorGridExpandedHeight.current = colorGridElement.clientHeight;
-    }
-
     animateExpandCollapse(
-      colorGridElement,
+      colorGridContainerElement,
       isExpanded ? "collapse" : "expand",
-      colorGridExpandedHeight.current,
+      colorGridElement.clientHeight,
     );
   };
 
@@ -43,14 +41,12 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
   };
 
   return (
-    <div className="block is-clipped">
+    <div className={`block mb-0`}>
       <div
-        className={`is-clickable is-flex is-justify-content-space-between is-align-items-center`}
+        className={`${styles.companyNameContainer} is-clickable has-background-black-bis is-flex is-justify-content-space-between is-align-items-center`}
         onClick={handleNameContainerClick}
       >
-        <h3
-          className={`${styles.companyName} subtitle has-background-black-bis is-4 is-size-5-mobile py-4 mb-1`}
-        >
+        <h3 className={`subtitle is-4 is-size-5-mobile py-4 mb-0`}>
           {company.name}
           <a
             className="ml-2"
@@ -65,37 +61,41 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
         </h3>
         <div>
           <button
-            className={`button`}
+            className={`button is-small`}
             ref={buttonRef}
             type="button"
+            aria-label={isExpanded ? "collapse colors" : "expand colors"}
+            title={isExpanded ? "collapse colors" : "expand colors"}
             onClick={handleToggleButtonClick}
           >
             <Icon
               path={mdiChevronDown}
               className={`${styles.toggleButtonIcon} icon`}
               aria-hidden="true"
-              size="1.5rem"
+              size="1.25rem"
               rotate={!isExpanded ? 180 : undefined}
             />
           </button>
         </div>
       </div>
-      <div
-        className={`${styles.colorGrid} grid is-gap-1`}
-        ref={colorGridRef}
-        aria-hidden={!isExpanded}
-      >
-        {company.colors.map((color) => (
-          <div className="cell" key={color.id}>
-            <ColorBlock
-              color={color}
-              isSelected={color.id === selectedColor?.id}
-              onClick={() => {
-                set.selectedColor(color);
-              }}
-            />
-          </div>
-        ))}
+      <div className="is-clipped" ref={colorGridContainerRef}>
+        <div
+          className={`${styles.colorGrid} grid is-gap-1 is-clipped`}
+          ref={colorGridRef}
+          aria-hidden={!isExpanded}
+        >
+          {company.colors.map((color) => (
+            <div className="cell" key={color.id}>
+              <ColorBlock
+                color={color}
+                isSelected={color.id === selectedColor?.id}
+                onClick={() => {
+                  set.selectedColor(color);
+                }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

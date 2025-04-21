@@ -1,7 +1,7 @@
 :global html,
 :global body,
 :global #root {
-  height: 100%;
+  block-size: 100%;
 }
 
 .mainContent {
@@ -13,7 +13,8 @@
     "colors";
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr;
-  max-height: 100%;
+  min-block-size: 100%;
+  max-block-size: 100%;
   overflow: hidden;
 }
 
@@ -45,7 +46,7 @@
     grid-area: shirt-output;
     flex-direction: column;
     block-size: fit-content;
-    max-height: 100%;
+    max-block-size: 100%;
     overflow: auto;
     border-block-end: none;
     align-items: stretch;
