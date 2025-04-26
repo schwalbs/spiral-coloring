@@ -279,12 +279,6 @@
         "id": "183"
       },
       {
-        "name": "Granny Apple",
-        "hexCode": "#b4d96a",
-        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-158.jpg",
-        "id": "158"
-      },
-      {
         "name": "Muir Green",
         "hexCode": "#6d795d",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-170.jpg",
@@ -897,12 +891,6 @@
         "id": "135"
       },
       {
-        "name": "Cardinal Red",
-        "hexCode": "#bf344d",
-        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-163.jpg",
-        "id": "163"
-      },
-      {
         "name": "Bubble Gum",
         "hexCode": "#fabcc6",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-98.jpg",
@@ -946,6 +934,227 @@
       }
     ],
     "siteHref": "https://www.dharmatrading.com/dyes/dharma-fiber-reactive-procion-dyes.html"
+  },
+  {
+    "name": "Jacquard",
+    "siteHref": "https://www.jacquardproducts.com/procion-mx",
+    "colors": [
+      {
+        "hexCode": "#f15d59",
+        "id": "028",
+        "name": "Bright Scarlet"
+      },
+      {
+        "hexCode": "#6d4136",
+        "id": "119",
+        "name": "Chocolate Brown"
+      },
+      {
+        "hexCode": "#f15c31",
+        "id": "020",
+        "name": "Brilliant Orange"
+      },
+      {
+        "hexCode": "#c66230",
+        "id": "016",
+        "name": "Rust Orange"
+      },
+      {
+        "hexCode": "#f9ac81",
+        "id": "180",
+        "name": "Peach"
+      },
+      {
+        "hexCode": "#a66a2b",
+        "id": "106",
+        "name": "Bronze"
+      },
+      {
+        "hexCode": "#db971c",
+        "id": "011",
+        "name": "Antique Gold"
+      },
+      {
+        "hexCode": "#fecb32",
+        "id": "010",
+        "name": "Golden Yellow"
+      },
+      {
+        "hexCode": "#f6efd2",
+        "id": "170",
+        "name": "Ecru"
+      },
+      {
+        "hexCode": "#f4e100",
+        "id": "004",
+        "name": "Lemon Yellow"
+      },
+      {
+        "hexCode": "#858f36",
+        "id": "107",
+        "name": "Avocado"
+      },
+      {
+        "hexCode": "#505e3a",
+        "id": "105",
+        "name": "Olive Green"
+      },
+      {
+        "hexCode": "#00a65d",
+        "id": "097",
+        "name": "Bright Green"
+      },
+      {
+        "hexCode": "#008360",
+        "id": "094",
+        "name": "Emerald Green"
+      },
+      {
+        "hexCode": "#1e5a50",
+        "id": "086",
+        "name": "Forest Green"
+      },
+      {
+        "hexCode": "#b4dfd8",
+        "id": "210",
+        "name": "Pale Aqua"
+      },
+      {
+        "hexCode": "#00afaa",
+        "id": "069",
+        "name": "Aquamarine"
+      },
+      {
+        "hexCode": "#005761",
+        "id": "071",
+        "name": "Teal"
+      },
+      {
+        "hexCode": "#01b9dd",
+        "id": "201",
+        "name": "Robin"
+      },
+      {
+        "hexCode": "#00a7de",
+        "id": "068",
+        "name": "Turquoise"
+      },
+      {
+        "hexCode": "#0089c8",
+        "id": "070",
+        "name": "Cerulean Blue"
+      },
+      {
+        "hexCode": "#0080c2",
+        "id": "232",
+        "name": "Bright Blue"
+      },
+      {
+        "hexCode": "#00375e",
+        "id": "076",
+        "name": "Cobalt Blue"
+      },
+      {
+        "hexCode": "#4696d1",
+        "id": "199",
+        "name": "Ice Blue"
+      },
+      {
+        "hexCode": "#1a4f77",
+        "id": "078",
+        "name": "Navy"
+      },
+      {
+        "hexCode": "#005aa1",
+        "id": "072",
+        "name": "Medium Blue"
+      },
+      {
+        "hexCode": "#5c6670",
+        "id": "211",
+        "name": "Neutral Grey"
+      },
+      {
+        "hexCode": "#0d4786",
+        "id": "079",
+        "name": "Midnight Blue"
+      },
+      {
+        "hexCode": "#2b3c81",
+        "id": "058",
+        "name": "Marine Violet"
+      },
+      {
+        "hexCode": "#5a4894",
+        "id": "192",
+        "name": "Lilac"
+      },
+      {
+        "hexCode": "#8975aa",
+        "id": "231",
+        "name": "Violet"
+      },
+      {
+        "hexCode": "#941d77",
+        "id": "042",
+        "name": "Raspberry"
+      },
+      {
+        "hexCode": "#83276a",
+        "id": "050",
+        "name": "Deep Purple"
+      },
+      {
+        "hexCode": "#b9006a",
+        "id": "040",
+        "name": "Fuchsia"
+      },
+      {
+        "hexCode": "#4c0025",
+        "id": "128",
+        "name": "Warm Black"
+      },
+      {
+        "hexCode": "#ef5ea2",
+        "id": "035",
+        "name": "Hot Pink"
+      },
+      {
+        "hexCode": "#d81a64",
+        "id": "034",
+        "name": "Magenta"
+      },
+      {
+        "hexCode": "#753146",
+        "id": "124",
+        "name": "Burgundy"
+      },
+      {
+        "hexCode": "#facad8",
+        "id": "184",
+        "name": "Bubble Gum"
+      },
+      {
+        "hexCode": "#934e60",
+        "id": "126",
+        "name": "Brown Rose"
+      },
+      {
+        "hexCode": "#cf1640",
+        "id": "032",
+        "name": "Carmine Red"
+      },
+      {
+        "hexCode": "#ee303c",
+        "id": "030",
+        "name": "Fire Engine Red"
+      },
+      {
+        "hexCode": "#000000",
+        "id": "150",
+        "name": "Jet Black"
+      }
+    ]
   },
   {
     "name": "Pro Chem & Dye",
