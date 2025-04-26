@@ -1,4 +1,4 @@
-import getColorBuilderLogger from "./utils/getColorBuilderLogger";
+import getColorBuilderLogger from "./utils/getColorBuilderLogger.js";
 
 const log = getColorBuilderLogger("dharma", "cyan");
 

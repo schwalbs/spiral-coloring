@@ -4,7 +4,7 @@ import * as path from "path";
 import { sortFn as byColor } from "color-sorter";
 import chalk from "chalk";
 
-import colorBuilderByManufacturer from "./manufacturer-color-buliders";
+import colorBuilderByManufacturer from "./manufacturer-color-buliders/index.js";
 
 const args = process.argv.slice(2);
 const manufacturerArgs = args.filter((arg) => !/^--/.test(arg));
@@ -35,7 +35,21 @@ if (colorBuilders.length === 0) {
   process.exit(0);
 }
 
-const manufacturers = await Promise.all(colorBuilders.map((c) => c()));
+const buildResults = await Promise.allSettled(colorBuilders.map((c) => c()));
+
+const failedBuilds = buildResults.filter(
+  (result) => result.status === "rejected",
+);
+if (failedBuilds.length) {
+  console.log(chalk.red("Error while building colors:"));
+  failedBuilds.forEach((failedResult) => {
+    console.log(chalk.red(failedResult.reason));
+  });
+
+  process.exit(0);
+}
+
+const manufacturers = buildResults.map((result) => result.value);
 manufacturers.map((manufacturer) => {
   manufacturer.colors.sort((a, b) => byColor(a.hexCode, b.hexCode));
 
@@ -58,5 +72,8 @@ if (isDryRun) {
     (error) => {
       if (error) console.error(error);
     },
+  );
+  console.log(
+    `Done. Output written to ${path.join(import.meta.dirname, "../public/colors-compiled.json")}`,
   );
 }

@@ -5,6 +5,10 @@ import { createCanvas, loadImage } from "canvas";
  * Uses a canvas to turn image data into a hex value.
  */
 async function getHexCodeFromImage(imagePath) {
+  if (!imagePath) {
+    throw Error(`Invalid image page: ${imagePath}`);
+  }
+
   try {
     const img = await loadImage(imagePath);
     const canvas = createCanvas(img.width, img.height);

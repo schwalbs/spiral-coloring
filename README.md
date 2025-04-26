@@ -5,6 +5,7 @@ This app is a tool to visualize how applying dye to a folded spiral shirt will r
 Color manufacturers currently supported:
 
 - [Dharma trading company](https://www.dharmatrading.com/dyes/dharma-fiber-reactive-procion-dyes.html)
+- [Jacquard](https://www.jacquardproducts.com/procion-mx)
 - [Pro Chem and Dye](https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/)
 
 ## Development
@@ -54,7 +55,6 @@ Refer to `./src/types/colors.ts` for expected formats.
 ## Future improvements
 
 - [ ] Add support for other dye manufacturers
-  - [ ] [Jacquard](https://www.jacquardproducts.com/procion-mx)
   - [ ] [Custom Colors](https://customcoloursinc.storenvy.com/)
   - [ ] [Happy Cat Dyes](https://www.happycattiedye.com/shop/category/dyes)
   - [ ] [Grateful Dyes](https://www.grateful-dyes.com/fabric-dyes/)
