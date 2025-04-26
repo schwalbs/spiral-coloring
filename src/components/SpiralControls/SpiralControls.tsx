@@ -24,7 +24,7 @@ const SpiralControls: FC = () => {
 
   return (
     <div className="block is-flex is-gap-4">
-      <fieldset className="radios">
+      <fieldset className="radios is-flex-shrink-0">
         <legend>Dye application</legend>
         <label className="radio">
           <input
@@ -60,7 +60,7 @@ const SpiralControls: FC = () => {
           </span>
         </label>
       </div>
-      <fieldset className="radios">
+      <fieldset className="radios is-flex-shrink-0">
         <legend>Spiral direction</legend>
         <label className="radio">
           <input
