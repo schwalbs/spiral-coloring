@@ -1,10 +1,8 @@
 import { parse } from "node-html-parser";
-import chalk from "chalk";
 import getHexCodeFromImage from "./utils/getHexCodeFromImage.js";
+import getColorBuilderLogger from "./utils/getColorBuilderLogger.js";
 
-const log = (message) => {
-  console.log(`${chalk.yellow("[pro-chem]")} ${message}`);
-};
+const log = getColorBuilderLogger("pro-chem", "yellow");
 
 async function buildProChemColors() {
   log("starting");
@@ -18,6 +16,15 @@ async function buildProChemColors() {
   const hexCodePromises = [];
 
   log("parsing page to build colors array");
+  // TODO the table we pull from uses a scroll event to load more columns. Figure out how to get that data
+  /*
+    await fetch("https://prochemicalanddye.com/wp-admin/admin-ajax.php", {
+        "referrer": "https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/",
+        "body": "action=wpt_load_both&table_id=520994&others%5Bpage_number%5D=2&others%5BisMob%5D=false&others%5Btype%5D=load_more&others%5Breset_search_clicked%5D=no",
+        "method": "POST",
+        "mode": "cors"
+    });
+  */
   const colors = doc
     .querySelectorAll("table tr")
     .reduce((acc, productTableRowElement) => {

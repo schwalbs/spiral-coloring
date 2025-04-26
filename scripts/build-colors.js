@@ -4,20 +4,14 @@ import * as path from "path";
 import { sortFn as byColor } from "color-sorter";
 import chalk from "chalk";
 
-import buildDharmaColors from "./build-colors-dharma.js";
-import buildProChemColors from "./build-colors-pro-chem.js";
-
-const MANUFACTURER_BUILDERS = {
-  dharma: buildDharmaColors,
-  ["pro-chem"]: buildProChemColors,
-};
+import colorBuilderByManufacturer from "./manufacturer-color-buliders";
 
 const args = process.argv.slice(2);
 const manufacturerArgs = args.filter((arg) => !/^--/.test(arg));
 
 const getFilteredBuilders = () => {
   return manufacturerArgs.reduce((acc, m) => {
-    const builder = MANUFACTURER_BUILDERS[m];
+    const builder = colorBuilderByManufacturer[m];
     if (!builder) {
       console.log(chalk.yellow(`No builder for manufacturer '${m}'`));
       return acc;
@@ -30,7 +24,7 @@ const getFilteredBuilders = () => {
 const colorBuilders =
   manufacturerArgs.length > 0
     ? getFilteredBuilders()
-    : Object.values(MANUFACTURER_BUILDERS);
+    : Object.values(colorBuilderByManufacturer);
 
 if (colorBuilders.length === 0) {
   console.log(

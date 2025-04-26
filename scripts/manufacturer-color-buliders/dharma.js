@@ -1,8 +1,6 @@
-import chalk from "chalk";
+import getColorBuilderLogger from "./utils/getColorBuilderLogger";
 
-const log = (message) => {
-  console.log(`${chalk.cyan("[dharma]")} ${message}`);
-};
+const log = getColorBuilderLogger("dharma", "cyan");
 
 export const buildIceDyeImgSrc = (colorId) =>
   `https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-${colorId.toLowerCase()}.jpg`;
