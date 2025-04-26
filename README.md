@@ -60,7 +60,7 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] [Grateful Dyes](https://www.grateful-dyes.com/fabric-dyes/)
 - [x] ~~Collapsable manufacturer sections~~
 - [ ] Additional controls
-  - [ ] Spiral direction
+  - [x] ~~Spiral direction~~
   - [ ] Reset shirt
   - [ ] Erase single color
   - [ ] Color blend amount

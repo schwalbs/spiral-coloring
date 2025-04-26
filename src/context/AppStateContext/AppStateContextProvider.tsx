@@ -9,6 +9,7 @@ const AppStateContextProvider: FC<PropsWithChildren> = ({ children }) => {
     dyeStyle: "liquid",
     selectedColor: null,
     shirt: {
+      spiralDirection: "cw",
       numSpirals: 2,
       spirals: [],
     },
@@ -52,6 +53,15 @@ const AppStateContextProvider: FC<PropsWithChildren> = ({ children }) => {
               },
             };
           });
+        },
+        spiralDirection: (direction) => {
+          setAppStateData((prevState) => ({
+            ...prevState,
+            shirt: {
+              ...prevState.shirt,
+              spiralDirection: direction,
+            },
+          }));
         },
       },
     }),

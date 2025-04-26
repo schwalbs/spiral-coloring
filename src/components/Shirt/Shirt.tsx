@@ -9,6 +9,7 @@ const Shirt: FC = () => {
   const { dyeStyle, shirt } = useContext(AppStateContext);
 
   const { spiralFillPaths } = buildSpiralPaths({
+    direction: shirt.spiralDirection,
     numSpirals: shirt.numSpirals,
     viewboxSize: VIEWBOX_SIZE,
   });

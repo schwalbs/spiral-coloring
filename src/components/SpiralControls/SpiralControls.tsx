@@ -16,6 +16,12 @@ const SpiralControls: FC = () => {
     set.dyeStyle(event.currentTarget.value as "ice" | "liquid");
   };
 
+  const handleSpiralDirectionChange: ChangeEventHandler<HTMLInputElement> = (
+    event,
+  ): void => {
+    set.spiralDirection(event.currentTarget.value as "cw" | "ccw");
+  };
+
   return (
     <div className="block is-flex is-gap-4">
       <fieldset className="radios">
@@ -54,6 +60,27 @@ const SpiralControls: FC = () => {
           </span>
         </label>
       </div>
+      <fieldset className="radios">
+        <legend>Spiral direction</legend>
+        <label className="radio">
+          <input
+            type="radio"
+            checked={shirt.spiralDirection === "cw"}
+            onChange={handleSpiralDirectionChange}
+            value="cw"
+          />
+          <span className="ml-2">Clockwise</span>
+        </label>
+        <label className="radio">
+          <input
+            type="radio"
+            checked={shirt.spiralDirection === "ccw"}
+            onChange={handleSpiralDirectionChange}
+            value="ccw"
+          />
+          <span className="ml-2">Counter Clockwise</span>
+        </label>
+      </fieldset>
     </div>
   );
 };
