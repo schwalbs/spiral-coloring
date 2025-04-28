@@ -48,9 +48,8 @@ Refer to `./src/types/colors.ts` for expected formats.
 
 `./scripts/build-colors.js` is the single entrypoint and can filter based on args passed.
 
-1. Create a `.js` under `./scripts` exporting a single async function that returns a `Company`
-2. Update `MANUFACTURER_BUILDERS` to map the imported script to a manufacturer key
-3. Add a new script to `package.json` to run `build-colors.js` with just the manufacturer
+1. Create a `.js` under `./scripts/manufacturer-color-builders` exporting a single async function that returns a `Company`
+2. Update the deault export in `./scripts/manufacturer-color-builders/index.js` to map to the new builder
 
 ## Future improvements
 
@@ -86,4 +85,3 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Better error handling when building colors
   - [ ] Workers for each manufacturer builder
   - [ ] Dye manufacturer JSON validation
-  - [ ] Update `build-colors.js` to use workers
