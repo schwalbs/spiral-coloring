@@ -54,6 +54,15 @@ const AppStateContextProvider: FC<PropsWithChildren> = ({ children }) => {
             };
           });
         },
+        spiralColors: (colors) => {
+          setAppStateData((prevState) => ({
+            ...prevState,
+            shirt: {
+              ...prevState.shirt,
+              spirals: colors,
+            },
+          }));
+        },
         spiralDirection: (direction) => {
           setAppStateData((prevState) => ({
             ...prevState,

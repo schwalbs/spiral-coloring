@@ -34,6 +34,11 @@
   overflow: auto;
 }
 
+.shirtOptionsContainer {
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
+
 @media screen and (min-width: 768px) {
   .mainContent {
     grid-template-rows: auto 1fr 1fr;

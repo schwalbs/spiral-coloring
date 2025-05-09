@@ -17,6 +17,7 @@ export type AppState = AppStateData & {
     numSpirals: (numSpirals: number) => void;
     selectedColor: (nextColor: Color | null) => void;
     spiralColor: (spiralIndex: number, color: Color) => void;
+    spiralColors: (colors: Array<Color | undefined>) => void;
     spiralDirection: (
       direction: AppStateData["shirt"]["spiralDirection"],
     ) => void;
