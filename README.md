@@ -64,6 +64,7 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Reset shirt
   - [ ] Erase single color
   - [ ] Color blend amount
+  - [ ] Dye intensity
 - [ ] Blending between colors in spiral
 - [ ] Filters for colors
   - [ ] Color group (red, pink, green, blue, purple, yellow, orange, neutrals, brown)
@@ -73,7 +74,9 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Spiraled shirt image download
   - [ ] PDF or image with color swatch
 - [ ] Color swatch section for shirt
-- [ ] Shareable URL
+- [ ] Sharing
+  - [ ] Via URL
+  - [ ] Via code and import
 - [ ] Active color indicator
 - [ ] Tech improvements
   - [x] ~~Infer hex color from dye image~~
