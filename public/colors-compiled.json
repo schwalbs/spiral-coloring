@@ -3,6 +3,12 @@
     "name": "Dharma Trading Company",
     "colors": [
       {
+        "name": "Blood Moon",
+        "hexCode": "#b26b69",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-210.jpg",
+        "id": "210"
+      },
+      {
         "name": "Watermelon",
         "hexCode": "#f15751",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-166.jpg",
@@ -121,6 +127,12 @@
         "hexCode": "#ffa659",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-147.jpg",
         "id": "147"
+      },
+      {
+        "name": "Rattlesnake",
+        "hexCode": "#907d6a",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-211.jpg",
+        "id": "211"
       },
       {
         "name": "Wild Thing",
@@ -559,6 +571,12 @@
         "hexCode": "#1a4b73",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-168.jpg",
         "id": "168"
+      },
+      {
+        "name": "Snow Maiden",
+        "hexCode": "#607c97",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-212.jpg",
+        "id": "212"
       },
       {
         "name": "Hot Black  (Hot Water)",
@@ -1566,7 +1584,7 @@
         "hexCode": "#4e6992",
         "id": "4217",
         "name": "Wedgewood",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4217.jpg"
+        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2025/05/3chip-MX4217.jpg"
       },
       {
         "hexCode": "#074bb3",
