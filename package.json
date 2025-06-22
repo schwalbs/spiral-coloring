@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "colors:dharma": "npm run colors -- dharma",
     "colors:pro-chem": "npm run colors -- pro-chem",
     "colors": "node ./scripts/build-colors.js",
