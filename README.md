@@ -60,7 +60,7 @@ Refer to `./src/types/colors.ts` for expected formats.
 - [x] ~~Collapsable manufacturer sections~~
 - [ ] Additional controls
   - [x] ~~Spiral direction~~
-  - [ ] Reset shirt
+  - [x] Reset shirt
   - [ ] Erase single color
   - [ ] Color blend amount
   - [ ] Dye intensity
