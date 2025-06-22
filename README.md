@@ -58,16 +58,12 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] [Happy Cat Dyes](https://www.happycattiedye.com/shop/category/dyes)
   - [ ] [Grateful Dyes](https://www.grateful-dyes.com/fabric-dyes/)
 - [x] ~~Collapsable manufacturer sections~~
-- [ ] Additional controls
+- [x] Additional controls
   - [x] ~~Spiral direction~~
   - [x] Reset shirt
-  - [ ] Erase single color
-  - [ ] Color blend amount
-  - [ ] Dye intensity
 - [ ] Blending between colors in spiral
 - [ ] Filters for colors
   - [ ] Color group (red, pink, green, blue, purple, yellow, orange, neutrals, brown)
-  - [ ] Manufacturer
 - [ ] Background or texture to folded shirt
 - [ ] Export options
   - [ ] Spiraled shirt image download
@@ -75,7 +71,6 @@ Refer to `./src/types/colors.ts` for expected formats.
 - [ ] Color swatch section for shirt
 - [ ] Sharing
   - [x] ~~Via URL~~
-  - [ ] Via code and import
 - [ ] Active color indicator
 - [ ] Tech improvements
   - [x] ~~Infer hex color from dye image~~
