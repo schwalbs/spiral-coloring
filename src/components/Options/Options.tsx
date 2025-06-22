@@ -2,9 +2,11 @@ import { FC, useContext, useEffect, useRef, useState } from "react";
 import { mdiDotsVertical } from "@mdi/js";
 import Icon from "@mdi/react";
 import { AppStateContext } from "../../context/AppStateContext";
+import { getAppStateURL } from "../../utils/url";
 
 const Options: FC = () => {
-  const { set, shirt } = useContext(AppStateContext);
+  const appState = useContext(AppStateContext);
+  const { shirt, set } = appState;
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -43,6 +45,20 @@ const Options: FC = () => {
     );
   };
 
+  const copyDesignURL = async () => {
+    const url = getAppStateURL(appState);
+
+    try {
+      const clipboardItem = new ClipboardItem({
+        "text/plain": url.toString(),
+      });
+      await navigator.clipboard.write([clipboardItem]);
+    } catch (error) {
+      console.warn("Unable to copy with CliboardItem: " + error);
+      console.log("[INFO] URL: " + url.toString());
+    }
+  };
+
   return (
     <div className={`dropdown ${isOpen ? "is-active" : ""}`}>
       <div className="dropdown-trigger">
@@ -71,10 +87,18 @@ const Options: FC = () => {
           >
             Remove all colors
           </button>
-          <button className="dropdown-item" type="button">
-            Download as PNG
-          </button>
-          <button className="dropdown-item" type="button">
+          {/* <button
+            className="dropdown-item"
+            type="button"
+            onClick={copyDesignURL}
+          >
+            Download pattern
+          </button> */}
+          <button
+            className="dropdown-item"
+            type="button"
+            onClick={copyDesignURL}
+          >
             Copy link with pattern
           </button>
         </div>

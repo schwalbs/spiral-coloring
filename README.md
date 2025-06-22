@@ -74,7 +74,7 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] PDF or image with color swatch
 - [ ] Color swatch section for shirt
 - [ ] Sharing
-  - [ ] Via URL
+  - [x] ~~Via URL~~
   - [ ] Via code and import
 - [ ] Active color indicator
 - [ ] Tech improvements

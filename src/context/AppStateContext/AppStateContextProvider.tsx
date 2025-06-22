@@ -3,16 +3,19 @@ import AppStateContext, {
   type AppState,
   type AppStateData,
 } from "./AppStateContext";
+import { DEFAULT_APP_STATE_DATA } from "./constants";
 
-const AppStateContextProvider: FC<PropsWithChildren> = ({ children }) => {
+type Props = {
+  initialState?: Partial<AppStateData>;
+};
+
+const AppStateContextProvider: FC<PropsWithChildren<Props>> = ({
+  initialState,
+  children,
+}) => {
   const [appStateData, setAppStateData] = useState<AppStateData>({
-    dyeStyle: "liquid",
-    selectedColor: null,
-    shirt: {
-      spiralDirection: "cw",
-      numSpirals: 2,
-      spirals: [],
-    },
+    ...DEFAULT_APP_STATE_DATA,
+    ...initialState,
   });
 
   const appState: AppState = useMemo(

@@ -6,10 +6,13 @@ import Options from "./components/Options";
 import SpiralControls from "./components/SpiralControls";
 import { AppStateContextProvider } from "./context/AppStateContext";
 import styles from "./App.module.css";
+import { parseAppStateFromUrl } from "./utils/url";
+
+const initialAppState = parseAppStateFromUrl(window.location.href);
 
 const App: FC = () => {
   return (
-    <AppStateContextProvider>
+    <AppStateContextProvider initialState={initialAppState}>
       <section className={`${styles.mainContent} section p-0`}>
         <div
           className={`${styles.shirtOutputContainer} is-flex p-4 is-gap-4 is-position-relative`}
