@@ -19,7 +19,10 @@ const Options: FC = () => {
 
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (!target.closest(".dropdown")) {
+      if (
+        !target.closest(".dropdown-menu") &&
+        !target.closest(".dropdown-toggle")
+      ) {
         setIsOpen(false);
       }
     };
@@ -60,28 +63,28 @@ const Options: FC = () => {
   };
 
   return (
-    <div className={`dropdown ${isOpen ? "is-active" : ""}`}>
-      <div className="dropdown-trigger">
+    <div className={`dropdown ${isOpen ? "show" : ""}`}>
+      <div>
         <button
-          className="button is-small"
+          className="btn btn-sm btn-outline-light dropdown-toggle"
           aria-haspopup
           aria-controls="options-menu"
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
         >
-          <Icon path={mdiDotsVertical} className="icon is-small" />
+          <Icon path={mdiDotsVertical} size="1rem" />
         </button>
       </div>
       <div
         ref={menuRef}
-        className="dropdown-menu"
+        className={`dropdown-menu ${isOpen ? "show" : ""}`}
         id="options-menu"
         role="menu"
         tabIndex={0}
       >
-        <div className="dropdown-content">
+        <div>
           <button
-            className="dropdown-item"
+            className="dropdown-item btn btn-link text-start border-0 w-100 rounded-0"
             type="button"
             onClick={clearShirtColors}
           >
@@ -95,7 +98,7 @@ const Options: FC = () => {
             Download pattern
           </button> */}
           <button
-            className="dropdown-item"
+            className="dropdown-item btn btn-link text-start border-0 w-100 rounded-0"
             type="button"
             onClick={copyDesignURL}
           >

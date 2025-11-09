@@ -22,7 +22,10 @@ const ColorBlock: FC<Props> = ({
     <button
       type="button"
       onClick={onClick}
-      className={`${styles.container} ${isSelected ? styles.containerSelected : ""} is-flex is-flex-direction-column is-justify-content-space-between p-1 is-clipped`}
+      className={`
+        ${styles.container}
+        ${isSelected ? " border-light " : " border-transparent "}
+        d-flex flex-column justify-content-between p-1 overflow-hidden rounded-2 btn border-2`}
       style={{
         backgroundColor: color.hexCode,
         backgroundImage:
@@ -32,9 +35,7 @@ const ColorBlock: FC<Props> = ({
         ...iceDyeImgStyles,
       }}
     >
-      <span
-        className={`${styles.name} is-size-6 is-size-7-mobile has-background-black-bis py-2 px-1`}
-      >
+      <span className={`${styles.name} small bg-dark text-white py-2 px-1`}>
         {color.name}
       </span>
     </button>

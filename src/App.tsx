@@ -13,21 +13,19 @@ const initialAppState = parseAppStateFromUrl(window.location.href);
 const App: FC = () => {
   return (
     <AppStateContextProvider initialState={initialAppState}>
-      <section className={`${styles.mainContent} section p-0`}>
+      <section className={`${styles.mainContent} p-0`}>
         <div
-          className={`${styles.shirtOutputContainer} is-flex p-4 is-gap-4 is-position-relative`}
+          className={`${styles.shirtOutputContainer} d-flex p-4 gap-4 position-relative border-light`}
         >
-          <div className="is-flex is-flex-direction-column is-align-items-center is-gap-2 is-flex-grow-1">
+          <div className="d-flex flex-column align-items-center gap-2 flex-grow-1">
             Folded shirt
             <DyePlacementDiagram />
           </div>
-          <div className="is-flex is-flex-direction-column is-align-items-center is-gap-2 is-flex-grow-1">
+          <div className="d-flex flex-column align-items-center gap-2 flex-grow-1">
             Result
             <Shirt />
           </div>
-          <div
-            className={`is-position-absolute mt-4 ml-4 ${styles.shirtOptionsContainer}`}
-          >
+          <div className={`position-absolute ${styles.shirtOptionsContainer}`}>
             <Options />
           </div>
         </div>

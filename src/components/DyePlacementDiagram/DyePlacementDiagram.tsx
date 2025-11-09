@@ -35,8 +35,7 @@ const DyePlacementDiagram: FC = () => {
           cx={VIEW_BOX_SIZE / 2}
           cy={VIEW_BOX_SIZE / 2}
           r={VIEW_BOX_SIZE / 2}
-          stroke="#fff"
-          strokeWidth="0.5"
+          strokeWidth="4"
           className={styles.slicePath}
           fill={
             shirt.numSpirals === 1 && shirt.spirals[0]

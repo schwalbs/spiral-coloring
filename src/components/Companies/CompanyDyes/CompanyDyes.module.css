@@ -1,6 +1,7 @@
 .companyNameContainer {
   position: sticky;
   top: 0;
+  cursor: pointer;
 }
 
 .toggleButtonIcon {
@@ -8,11 +9,13 @@
 }
 
 .colorGrid {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .colorGrid {
-    grid-template-columns: repeat(auto-fit, var(--bulma-grid-column-min));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }

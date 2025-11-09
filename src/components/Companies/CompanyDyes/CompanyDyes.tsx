@@ -41,15 +41,15 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
   };
 
   return (
-    <div className={`block mb-0`}>
+    <div className={`mb-0`}>
       <div
-        className={`${styles.companyNameContainer} is-clickable px-4 has-background-black-bis is-flex is-justify-content-space-between is-align-items-center`}
+        className={`${styles.companyNameContainer} px-4 d-flex justify-content-between align-items-center bg-dark`}
         onClick={handleNameContainerClick}
       >
-        <h3 className={`subtitle is-4 is-size-5-mobile py-4 mb-0`}>
+        <h3 className={`h4 py-4 mb-0`}>
           {company.name}
           <a
-            className="ml-2"
+            className="ms-2"
             href={company.siteHref}
             target="_blank"
             aria-label={`Open ${company.name} dye page in a new tab`}
@@ -61,7 +61,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
         </h3>
         <div>
           <button
-            className={`button is-small`}
+            className={`btn btn-sm btn-outline-light`}
             ref={buttonRef}
             type="button"
             aria-label={isExpanded ? "collapse colors" : "expand colors"}
@@ -70,7 +70,7 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
           >
             <Icon
               path={mdiChevronDown}
-              className={`${styles.toggleButtonIcon} icon`}
+              className={`${styles.toggleButtonIcon}`}
               aria-hidden="true"
               size="1.25rem"
               rotate={!isExpanded ? 180 : undefined}
@@ -78,14 +78,14 @@ const CompanyDyes: FC<{ company: Company }> = ({ company }) => {
           </button>
         </div>
       </div>
-      <div className="is-clipped" ref={colorGridContainerRef}>
+      <div className="overflow-hidden" ref={colorGridContainerRef}>
         <div
-          className={`${styles.colorGrid} grid is-gap-1 px-4 py-1`}
+          className={`${styles.colorGrid} px-4 py-1`}
           ref={colorGridRef}
           aria-hidden={!isExpanded}
         >
           {company.colors.map((color) => (
-            <div className="cell" key={color.id}>
+            <div key={color.id}>
               <ColorBlock
                 color={color}
                 iceDyeImgStyles={company.iceDyeImageStyles}

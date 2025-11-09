@@ -5,7 +5,7 @@
 }
 
 .containerSelected {
-  outline: 2px solid var(--bulma-light);
+  outline: 2px solid var(--bs-border-light);
   outline-offset: 2px;
 }
 

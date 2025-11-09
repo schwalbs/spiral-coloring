@@ -23,63 +23,67 @@ const SpiralControls: FC = () => {
   };
 
   return (
-    <div className="block is-flex is-gap-4">
-      <fieldset className="radios is-flex-shrink-0">
+    <div className="d-flex gap-4">
+      <fieldset className="flex-shrink-0">
         <legend>Dye application</legend>
-        <label className="radio">
+        <div className="form-check">
           <input
             type="radio"
             checked={dyeStyle === "liquid"}
             onChange={handleColorStyleChange}
             value="liquid"
+            className="form-check-input"
           />
-          <span className="ml-2">Liquid</span>
-        </label>
-        <label className="radio">
+          <span className="form-check-label ms-2">Liquid</span>
+        </div>
+        <div className="form-check">
           <input
             type="radio"
             checked={dyeStyle === "ice"}
             onChange={handleColorStyleChange}
             value="ice"
+            className="form-check-input"
           />
-          <span className="ml-2">Ice</span>
-        </label>
+          <span className="form-check-label ms-2">Ice</span>
+        </div>
       </fieldset>
-      <div>
-        <label className="is-inline-flex is-flex-direction-column">
-          <span>Spiral section count</span>
-          <span className="is-flex is-gap-2">
-            <span className="is-size-6">{shirt.numSpirals}</span>
-            <input
-              type="range"
-              min="2"
-              max="10"
-              value={shirt.numSpirals}
-              onChange={onNumSpiralsChange}
-            />
-          </span>
-        </label>
-      </div>
-      <fieldset className="radios is-flex-shrink-0">
+
+      <fieldset className="flex-shrink-0">
+        <legend>Spiral secion count</legend>
+        <div className="d-flex gap-2">
+          <span className="medium">{shirt.numSpirals}</span>
+          <input
+            type="range"
+            min="2"
+            max="10"
+            value={shirt.numSpirals}
+            onChange={onNumSpiralsChange}
+            className="form-range"
+          />
+        </div>
+      </fieldset>
+      <fieldset className="flex-shrink-0">
         <legend>Spiral direction</legend>
-        <label className="radio">
+        <div className="form-check">
           <input
             type="radio"
             checked={shirt.spiralDirection === "cw"}
             onChange={handleSpiralDirectionChange}
             value="cw"
+            className="form-check-input"
           />
-          <span className="ml-2">Clockwise</span>
-        </label>
-        <label className="radio">
+          <span className="form-check-label ms-2">Clockwise</span>
+        </div>
+        <div className="form-check">
           <input
             type="radio"
             checked={shirt.spiralDirection === "ccw"}
             onChange={handleSpiralDirectionChange}
             value="ccw"
+            className="form-check-input"
           />
-          <span className="ml-2">Counter Clockwise</span>
-        </label>
+          <span className="form-check-label ms-2">Counter Clockwise</span>
+        </div>
       </fieldset>
     </div>
   );

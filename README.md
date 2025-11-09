@@ -10,7 +10,7 @@ Color manufacturers currently supported:
 
 ## Development
 
-This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, and the [Bulma CSS framework](https://bulma.io/).
+This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, and the [Bootstrap CSS framework](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
 Other core libraries:
 
 - [node-html-parser](https://www.npmjs.com/package/node-html-parser) to parse dye manufacturer pages
@@ -80,4 +80,4 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Better error handling when building colors
   - [ ] Workers for each manufacturer builder
   - [ ] Dye manufacturer JSON validation
-  - [ ] Replace bulma with bootstrap
+  - [x] Replace bulma with bootstrap

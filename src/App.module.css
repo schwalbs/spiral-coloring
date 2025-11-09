@@ -20,12 +20,10 @@
 
 .shirtOutputContainer {
   grid-area: shirt-output;
-  border-block-end: 2px solid var(--bulma-border);
 }
 
 .controlsContainer {
   grid-area: controls;
-  border-block-end: 2px solid var(--bulma-border);
   overflow-x: auto;
 }
 
@@ -35,8 +33,7 @@
 }
 
 .shirtOptionsContainer {
-  inset-block-start: 0;
-  inset-inline-start: 0;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -44,7 +41,8 @@
     grid-template-rows: auto 1fr 1fr;
     grid-template-columns: 20rem 1fr 1fr;
     grid-template-areas:
-      "shirt-output controls controls" "shirt-output colors colors"
+      "shirt-output controls controls"
+      "shirt-output colors colors"
       "shirt-output colors colors";
   }
 
@@ -58,12 +56,11 @@
     align-items: stretch;
   }
 
-  .controlsContainer {
-    border-inline-start: 2px solid var(--bulma-border);
-  }
-
   .companiesContainer {
     overflow: auto;
-    border-inline-start: 2px solid var(--bulma-border);
+  }
+
+  .shirtOptionsContainer {
+    display: block;
   }
 }
