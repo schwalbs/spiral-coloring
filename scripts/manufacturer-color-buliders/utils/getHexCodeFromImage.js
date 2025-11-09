@@ -38,7 +38,7 @@ async function getHexCodeFromImage(imagePath) {
     const hex = `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
     return hex;
   } catch (error) {
-    console.error("Error processing image:", error);
+    console.error(`Error processing image ${imagePath}:\n`, error);
     return null;
   }
 }
