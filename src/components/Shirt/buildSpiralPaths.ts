@@ -81,11 +81,15 @@ const buildSpiralPaths = ({
     centerY,
   ]);
 
+  // CW spirals use x=sin,y=cos so consecutive endpoints go CCW in SVG → sweep-flag=0
+  // CCW spirals use x=cos,y=sin so consecutive endpoints go CW in SVG → sweep-flag=1
+  const sweepFlag = direction === "cw" ? 0 : 1;
+
   const spiralFillPaths = spiralPaths.map((path, i, arr) => {
     const nextPath = arr[(i + 1) % spiralPaths.length];
     const endOfNextPathCoords = getEndOfSpiralCoords(nextPath) ?? "";
 
-    const arcBetweenSpirals = `A ${spiralRadius} ${spiralRadius} 0 0 1 ${endOfNextPathCoords}`;
+    const arcBetweenSpirals = `A ${spiralRadius} ${spiralRadius} 0 0 ${sweepFlag} ${endOfNextPathCoords}`;
 
     return `${path} ${arcBetweenSpirals} ${reversePath(nextPath)} Z`;
   });
