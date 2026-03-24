@@ -51,6 +51,12 @@
         "id": "14"
       },
       {
+        "name": "Jungle Red",
+        "hexCode": "#e83a13",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-45.jpg",
+        "id": "45"
+      },
+      {
         "name": "Tangerine",
         "hexCode": "#dc5435",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-120.jpg",
@@ -441,10 +447,10 @@
         "id": "202"
       },
       {
-        "name": "Black Ice",
+        "name": "Avalon",
         "hexCode": "#707e7e",
-        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-207.jpg",
-        "id": "207"
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-209.jpg",
+        "id": "209"
       },
       {
         "name": "Raven Black",
@@ -553,6 +559,12 @@
         "hexCode": "#8babc0",
         "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-76.jpg",
         "id": "76"
+      },
+      {
+        "name": "Stratosphere",
+        "hexCode": "#2b99eb",
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-195.jpg",
+        "id": "195"
       },
       {
         "name": "Nebula Navy",
@@ -789,10 +801,10 @@
         "id": "64"
       },
       {
-        "name": "Avalon",
+        "name": "Black Ice",
         "hexCode": "#71636d",
-        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-209.jpg",
-        "id": "209"
+        "iceDyeImgSrc": "https://dharma-www.s3.us-west-1.amazonaws.com/images/colorchips/pr/chip/pr-ice-dye-color-chip-207.jpg",
+        "id": "207"
       },
       {
         "name": "Red Violet",
@@ -1181,602 +1193,602 @@
       {
         "hexCode": "#a81815",
         "id": "320",
-        "name": "Turkey Red",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX320.jpg"
+        "name": "320 Turkey Red",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX320.jpg"
       },
       {
         "hexCode": "#7a0e07",
         "id": "336",
-        "name": "Barn Red",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX336.jpg"
+        "name": "336 Barn Red",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX336.jpg"
       },
       {
         "hexCode": "#fe4f43",
         "id": "301",
-        "name": "Coral",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX301.jpg"
+        "name": "301 Coral",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX301.jpg"
       },
       {
         "hexCode": "#9e3122",
         "id": "5213",
-        "name": "Rust Brown",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5213.jpg"
+        "name": "5213 Rust Brown",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5213.jpg"
       },
       {
         "hexCode": "#9c2d1d",
         "id": "3222",
-        "name": "Rosewood",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX3222.jpg"
+        "name": "3222 Rosewood",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX3222.jpg"
       },
       {
         "hexCode": "#462017",
         "id": "511A",
-        "name": "Chocolate Brown",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX511.jpg"
+        "name": "511A Chocolate Brown",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX511.jpg"
       },
       {
         "hexCode": "#ae7a6d",
         "id": "5220",
-        "name": "Old Rose",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5220.jpg"
+        "name": "5220 Old Rose",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5220.jpg"
       },
       {
         "hexCode": "#983e24",
         "id": "520",
-        "name": "Brick",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX520.jpg"
+        "name": "520 Brick",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX520.jpg"
       },
       {
         "hexCode": "#813014",
         "id": "5226",
-        "name": "Nutmeg",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/08/3chip-MX5226.jpg"
+        "name": "5226 Nutmeg",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5226.jpg"
       },
       {
         "hexCode": "#f74102",
         "id": "202",
-        "name": "Strong Orange",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX202.jpg"
+        "name": "202 Strong Orange",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX202.jpg"
       },
       {
         "hexCode": "#bd5129",
         "id": "2215",
-        "name": "Rust Orange",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX2215.jpg"
+        "name": "2215 Rust Orange",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX2215.jpg"
       },
       {
         "hexCode": "#fba583",
         "id": "2139",
-        "name": "Peach",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX2139.jpg"
+        "name": "2139 Peach",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX2139.jpg"
       },
       {
         "hexCode": "#a22f01",
         "id": "2216",
-        "name": "Pumpkin Spice",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/03/3chip-MX2216.jpg"
+        "name": "2216 Pumpkin Spice",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX2216.jpg"
       },
       {
         "hexCode": "#be3800",
         "id": "3220",
-        "name": "Pagoda Red",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX3220.jpg"
+        "name": "3220 Pagoda Red",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX3220.jpg"
       },
       {
         "hexCode": "#35261f",
         "id": "513",
-        "name": "Espresso",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX513.jpg"
+        "name": "513 Espresso",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX513.jpg"
       },
       {
         "hexCode": "#5a3a2b",
         "id": "5225",
-        "name": "Hot Chocolate",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/08/3chip-MX5225.jpg"
+        "name": "5225 Hot Chocolate",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5225.jpg"
       },
       {
         "hexCode": "#fd8c50",
         "id": "200",
-        "name": "Musk Melon",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX200.jpg"
+        "name": "200 Musk Melon",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX200.jpg"
       },
       {
         "hexCode": "#b55925",
         "id": "217",
-        "name": "Terra Cotta",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX217.jpg"
+        "name": "217 Terra Cotta",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX217.jpg"
       },
       {
         "hexCode": "#8c4922",
         "id": "514",
-        "name": "Cedar ",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX514-1.jpg"
+        "name": "514 Cedar",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX514-1.jpg"
       },
       {
         "hexCode": "#6f4c34",
         "id": "510N",
-        "name": "Basic Brown",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX510.jpg"
+        "name": "510N Basic Brown",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX510.jpg"
       },
       {
         "hexCode": "#e1761e",
         "id": "516",
-        "name": "Dusty Orange",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX516.jpg"
+        "name": "516 Dusty Orange",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX516.jpg"
       },
       {
         "hexCode": "#80654a",
         "id": "5207",
-        "name": "Mocha",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5207.jpg"
+        "name": "5207 Mocha",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5207.jpg"
       },
       {
         "hexCode": "#fd942a",
         "id": "2204",
-        "name": "Soft Orange",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX2204.jpg"
+        "name": "2204 Soft Orange",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX2204.jpg"
       },
       {
         "hexCode": "#b76309",
         "id": "1231",
-        "name": "Golden Oak",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2021/03/3chip-MX1231.jpg"
+        "name": "1231 Golden Oak",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX1231.jpg"
       },
       {
         "hexCode": "#d2ba99",
         "id": "5223",
-        "name": "Ecru",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5223.jpg"
+        "name": "5223 Ecru",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5223.jpg"
       },
       {
         "hexCode": "#cca773",
         "id": "500N",
-        "name": "Chino",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX500N.jpg"
+        "name": "500N Chino",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX500N.jpg"
       },
       {
         "hexCode": "#946828",
         "id": "5193",
-        "name": "Bronze",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5193.jpg"
+        "name": "5193 Bronze",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5193.jpg"
       },
       {
         "hexCode": "#f69e17",
         "id": "104",
-        "name": "Golden Yellow",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX104.jpg"
+        "name": "104 Golden Yellow",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX104.jpg"
       },
       {
         "hexCode": "#ae6d00",
         "id": "115",
-        "name": "Butterscotch",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX115.jpg"
+        "name": "115 Butterscotch",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX115.jpg"
       },
       {
         "hexCode": "#b1791b",
         "id": "1230",
-        "name": "Curry",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2015/09/3chip-MX1230.jpg"
+        "name": "1230 Curry",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX1230.jpg"
       },
       {
         "hexCode": "#89724a",
         "id": "5181",
-        "name": "Camel",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5181.jpg"
+        "name": "5181 Camel",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5181.jpg"
       },
       {
         "hexCode": "#625028",
         "id": "5224",
-        "name": "Harvest Wheat",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5224.jpg"
+        "name": "5224 Harvest Wheat",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5224.jpg"
       },
       {
         "hexCode": "#dfc998",
         "id": "011",
-        "name": "Vanilla Bean",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/08/3chip-MX011.jpg"
+        "name": "011 Vanilla Bean",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX011.jpg"
       },
       {
         "hexCode": "#fcaf01",
         "id": "112",
-        "name": "Tangerine",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX112.jpg"
+        "name": "112 Tangerine",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX112.jpg"
       },
       {
         "hexCode": "#67562e",
         "id": "5209",
-        "name": "Khaki",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5209.jpg"
+        "name": "5209 Khaki",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5209.jpg"
       },
       {
         "hexCode": "#ce9b12",
         "id": "111",
-        "name": "Mustard Yellow",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX111.jpg"
+        "name": "111 Mustard Yellow",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX111.jpg"
       },
       {
         "hexCode": "#f0ece1",
         "id": "010",
-        "name": "Winter White",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX010.jpg"
+        "name": "010 Winter White",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX010.jpg"
       },
       {
         "hexCode": "#fcd056",
         "id": "1228",
-        "name": "Straw",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX1228.jpg"
+        "name": "1228 Straw",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX1228.jpg"
       },
       {
         "hexCode": "#f1c951",
         "id": "100",
-        "name": "Golden Pineapple",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX100.jpg"
+        "name": "100 Golden Pineapple",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX100.jpg"
       },
       {
         "hexCode": "#fcd938",
         "id": "1229",
-        "name": "Clear Yellow",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX1229.jpg"
+        "name": "1229 Clear Yellow",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX1229.jpg"
       },
       {
         "hexCode": "#f9e00c",
         "id": "114",
-        "name": "Lemon Yellow",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX114.jpg"
+        "name": "114 Lemon Yellow",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX114.jpg"
       },
       {
         "hexCode": "#fdf07e",
         "id": "101",
-        "name": "Golden Delicious",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX101.jpg"
+        "name": "101 Golden Delicious",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX101.jpg"
       },
       {
         "hexCode": "#696633",
         "id": "5214",
-        "name": "Havana Brown",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX5214.jpg"
+        "name": "5214 Havana Brown",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX5214.jpg"
       },
       {
         "hexCode": "#10100e",
         "id": "629",
-        "name": "Black",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX629.jpg"
+        "name": "629 Black",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX629.jpg"
       },
       {
         "hexCode": "#fcfc7f",
         "id": "1203",
-        "name": "Hollandaise",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX1203.jpg"
+        "name": "1203 Hollandaise",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX1203.jpg"
       },
       {
         "hexCode": "#fcfc69",
         "id": "1202",
-        "name": "Citrus Yellow",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX1202.jpg"
+        "name": "1202 Citrus Yellow",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX1202.jpg"
       },
       {
         "hexCode": "#fcfc00",
         "id": "108",
-        "name": "Sun Yellow",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX108.jpg"
+        "name": "108 Sun Yellow",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX108.jpg"
       },
       {
         "hexCode": "#8e907b",
         "id": "603",
-        "name": "Nickel",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX603.jpg"
+        "name": "603 Nickel",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX603.jpg"
       },
       {
         "hexCode": "#0b0c08",
         "id": "699",
-        "name": " Tie Dye Black 699 ",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2022/05/Tie-Dye-Black-699.jpg"
+        "name": "Tie Dye Black 699",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/Tie-Dye-Black-699.jpg"
       },
       {
         "hexCode": "#8e9c9c",
         "id": "6160",
-        "name": "Stormy Grey",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX6160.jpg"
+        "name": "6160 Stormy Grey",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX6160.jpg"
       },
       {
         "hexCode": "#13c6d7",
         "id": "410",
-        "name": "Turquoise",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX410.jpg"
+        "name": "410 Turquoise",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX410.jpg"
       },
       {
         "hexCode": "#398690",
         "id": "423",
-        "name": "Oasis",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX423.jpg"
+        "name": "423 Oasis",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX423.jpg"
       },
       {
         "hexCode": "#95effc",
         "id": "4143",
-        "name": "Robin Egg Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4143.jpg"
+        "name": "4143 Robin Egg Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4143.jpg"
       },
       {
         "hexCode": "#061e22",
         "id": "602A",
-        "name": "Cotton Black",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX602A.jpg"
+        "name": "602A Cotton Black",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX602A.jpg"
       },
       {
         "hexCode": "#2a4e5b",
         "id": "435",
-        "name": "Marine",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX435.jpg"
+        "name": "435 Marine",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX435.jpg"
       },
       {
         "hexCode": "#04a2dd",
         "id": "4181",
-        "name": "Electric Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4181.jpg"
+        "name": "4181 Electric Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4181.jpg"
       },
       {
         "hexCode": "#70787b",
         "id": "644",
-        "name": "Simply Grey",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX644.jpg"
+        "name": "644 Simply Grey",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX644.jpg"
       },
       {
         "hexCode": "#0983bc",
         "id": "406",
-        "name": "Intense Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX406.jpg"
+        "name": "406 Intense Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX406.jpg"
       },
       {
         "hexCode": "#022a3d",
         "id": "414",
-        "name": "Deep Navy",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2025/06/3chip-MX414-1.jpg"
+        "name": "414 Deep Navy",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX414-1.jpg"
       },
       {
         "hexCode": "#0277b0",
         "id": "404",
-        "name": "Brightest Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX404.jpg"
+        "name": "404 Brightest Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX404.jpg"
       },
       {
         "hexCode": "#0f384e",
         "id": "402c",
-        "name": "Mixing Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX402.jpg"
+        "name": "402c Mixing Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX402.jpg"
       },
       {
         "hexCode": "#295875",
         "id": "426",
-        "name": "Blueberry",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX426.jpg"
+        "name": "426 Blueberry",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX426.jpg"
       },
       {
         "hexCode": "#4c9cda",
         "id": "4156",
-        "name": "Alpine Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4156.jpg"
+        "name": "4156 Alpine Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4156.jpg"
       },
       {
         "hexCode": "#1e6ca9",
         "id": "4201",
-        "name": "Azure Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4201.jpg"
+        "name": "4201 Azure Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4201.jpg"
       },
       {
         "hexCode": "#81c3f7",
         "id": "444",
-        "name": "Baby Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX444.jpg"
+        "name": "444 Baby Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX444.jpg"
       },
       {
         "hexCode": "#3f92dd",
         "id": "434",
-        "name": "Sky Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX434.jpg"
+        "name": "434 Sky Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX434.jpg"
       },
       {
         "hexCode": "#061a32",
         "id": "420",
-        "name": "Simply Navy",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX420.jpg"
+        "name": "420 Simply Navy",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX420.jpg"
       },
       {
         "hexCode": "#4e6992",
         "id": "4217",
-        "name": "Wedgewood",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2025/05/3chip-MX4217.jpg"
+        "name": "4217 Wedgewood",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4217.jpg"
       },
       {
         "hexCode": "#074bb3",
         "id": "400",
-        "name": "Basic Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX400.jpg"
+        "name": "400 Basic Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX400.jpg"
       },
       {
         "hexCode": "#021a46",
         "id": "412",
-        "name": "Navy",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX412.jpg"
+        "name": "412 Navy",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX412.jpg"
       },
       {
         "hexCode": "#5e71a3",
         "id": "4190",
-        "name": "Ice Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4190.jpg"
+        "name": "4190 Ice Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4190.jpg"
       },
       {
         "hexCode": "#182856",
         "id": "422N",
-        "name": "Indigo Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX422.jpg"
+        "name": "422N Indigo Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX422.jpg"
       },
       {
         "hexCode": "#243a7d",
         "id": "4154",
-        "name": "Sapphire Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4154.jpg"
+        "name": "4154 Sapphire Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4154.jpg"
       },
       {
         "hexCode": "#40579e",
         "id": "4205",
-        "name": "Royal Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4205.jpg"
+        "name": "4205 Royal Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4205.jpg"
       },
       {
         "hexCode": "#384179",
         "id": "4148",
-        "name": "Lapis",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4148.jpg"
+        "name": "4148 Lapis",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4148.jpg"
       },
       {
         "hexCode": "#161618",
         "id": "628",
-        "name": "Black",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX628.jpg"
+        "name": "628 Black",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX628.jpg"
       },
       {
         "hexCode": "#2b2856",
         "id": "4210",
-        "name": "Midnight Blue",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX4210.jpg"
+        "name": "4210 Midnight Blue",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX4210.jpg"
       },
       {
         "hexCode": "#13064d",
         "id": "418",
-        "name": "Reddish Navy",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX418.jpg"
+        "name": "418 Reddish Navy",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX418.jpg"
       },
       {
         "hexCode": "#c8c6c9",
         "id": "6111",
-        "name": "Pearl Grey",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX6111.jpg"
+        "name": "6111 Pearl Grey",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX6111.jpg"
       },
       {
         "hexCode": "#121012",
         "id": "604",
-        "name": "Black",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX604.jpg"
+        "name": "604 Black",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX604.jpg"
       },
       {
         "hexCode": "#76023d",
         "id": "3208",
-        "name": "Maroon",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX3208.jpg"
+        "name": "3208 Maroon",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX3208.jpg"
       },
       {
         "hexCode": "#810141",
         "id": "335",
-        "name": "Berry",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX335.jpg"
+        "name": "335 Berry",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX335.jpg"
       },
       {
         "hexCode": "#fc58a3",
         "id": "333",
-        "name": "Bubble Gum",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/03/3chip-MX333.jpg"
+        "name": "333 Bubble Gum",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX333.jpg"
       },
       {
         "hexCode": "#f83e8d",
         "id": "303",
-        "name": "Cotton Candy",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX303.jpg"
+        "name": "303 Cotton Candy",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX303.jpg"
       },
       {
         "hexCode": "#c50b4e",
         "id": "308",
-        "name": "Fuchsia",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX308.jpg"
+        "name": "308 Fuchsia",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX308.jpg"
       },
       {
         "hexCode": "#f82867",
         "id": "3142",
-        "name": "Hot Pink",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX3142.jpg"
+        "name": "3142 Hot Pink",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX3142.jpg"
       },
       {
         "hexCode": "#f92f66",
         "id": "331",
-        "name": "Cherry Blush",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX331.jpg"
+        "name": "331 Cherry Blush",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX331.jpg"
       },
       {
         "hexCode": "#c30433",
         "id": "305",
-        "name": "Mixing Red",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX305.jpg"
+        "name": "305 Mixing Red",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX305.jpg"
       },
       {
         "hexCode": "#d7254d",
         "id": "346",
-        "name": "Lipstick",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX346.jpg"
+        "name": "346 Lipstick",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX346.jpg"
       },
       {
         "hexCode": "#f94361",
         "id": "332",
-        "name": "Grecian Rose",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX332.jpg"
+        "name": "332 Grecian Rose",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX332.jpg"
       },
       {
         "hexCode": "#ef506a",
         "id": "344",
-        "name": "Pink Azalea",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX344.jpg"
+        "name": "344 Pink Azalea",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX344.jpg"
       },
       {
         "hexCode": "#c53b50",
         "id": "345",
-        "name": "Tea Rose",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/11/3chip-MX345.jpg"
+        "name": "345 Tea Rose",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX345.jpg"
       },
       {
         "hexCode": "#6f313a",
         "id": "319",
-        "name": "Bordeaux",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX319.jpg"
+        "name": "319 Bordeaux",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX319.jpg"
       },
       {
         "hexCode": "#b3071f",
         "id": "310N",
-        "name": "Basic Red",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX310.jpg"
+        "name": "310N Basic Red",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX310.jpg"
       },
       {
         "hexCode": "#8b3440",
         "id": "3221",
-        "name": "Rose Wine",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX3221.jpg"
+        "name": "3221 Rose Wine",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX3221.jpg"
       },
       {
         "hexCode": "#fc5969",
         "id": "3216",
-        "name": "Rose Bud",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX3216.jpg"
+        "name": "3216 Rose Bud",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX3216.jpg"
       },
       {
         "hexCode": "#cb0313",
         "id": "300",
-        "name": "Scarlet",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2024/03/3chip-MX300.jpg"
+        "name": "300 Scarlet",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX300.jpg"
       },
       {
         "hexCode": "#e0373d",
         "id": "302",
-        "name": "Watermelon",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX302.jpg"
+        "name": "302 Watermelon",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX302.jpg"
       },
       {
         "hexCode": "#bd1516",
         "id": "312N",
-        "name": "Strongest Red",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX312.jpg"
+        "name": "312N Strongest Red",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX312.jpg"
       },
       {
         "hexCode": "#bababa",
         "id": "655",
-        "name": "Neutral Grey",
-        "iceDyeImgSrc": "https://prochemicalanddye.com/wp-content/uploads/2023/05/3chip-MX655.jpg"
+        "name": "655 Neutral Grey",
+        "iceDyeImgSrc": "/spiral-coloring/pro-chem-images/3chip-MX655.jpg"
       }
     ],
     "iceDyeImageStyles": {
