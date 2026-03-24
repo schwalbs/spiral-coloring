@@ -51,6 +51,7 @@ if (failedBuilds.length) {
 
 const manufacturers = buildResults.map((result) => result.value);
 manufacturers.map((manufacturer) => {
+  manufacturer.colors = manufacturer.colors.filter((c) => c.hexCode != null);
   manufacturer.colors.sort((a, b) => byColor(a.hexCode, b.hexCode));
 
   return manufacturer;

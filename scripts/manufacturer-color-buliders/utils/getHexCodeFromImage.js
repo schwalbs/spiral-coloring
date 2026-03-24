@@ -1,4 +1,5 @@
 import { createCanvas, loadImage } from "canvas";
+import { readFileSync } from "fs";
 
 /**
  * More AI code, apologies. Given an image source, finds the hex value representing that image.
@@ -10,7 +11,16 @@ async function getHexCodeFromImage(imagePath) {
   }
 
   try {
-    const img = await loadImage(imagePath);
+    let buffer;
+    if (imagePath.startsWith("http")) {
+      buffer = await fetch(imagePath, {
+        headers: { Accept: "image/jpeg,image/png,image/*;q=0.8" },
+      }).then((r) => r.arrayBuffer());
+      buffer = Buffer.from(buffer);
+    } else {
+      buffer = readFileSync(imagePath);
+    }
+    const img = await loadImage(buffer);
     const canvas = createCanvas(img.width, img.height);
     const ctx = canvas.getContext("2d");
 

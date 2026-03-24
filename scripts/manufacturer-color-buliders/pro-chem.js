@@ -1,4 +1,7 @@
 import { parse } from "node-html-parser";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { join, dirname } from "path";
 import getHexCodeFromImage from "./utils/getHexCodeFromImage.js";
 import getColorBuilderLogger from "./utils/getColorBuilderLogger.js";
 
@@ -6,25 +9,17 @@ const log = getColorBuilderLogger("pro-chem", "yellow");
 
 async function buildProChemColors() {
   log("starting");
-  log("fetching dye page");
-  const proChemPageStr = await fetch(
-    "https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/",
-  ).then((response) => response.text());
+  log("reading local page file");
+  const proChemPageStr = readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), "pro-chem-page.html"),
+    "utf8",
+  );
 
   const doc = parse(proChemPageStr, "text/html");
 
   const hexCodePromises = [];
 
   log("parsing page to build colors array");
-  // TODO the table we pull from uses a scroll event to load more columns. Figure out how to get that data
-  /*
-    await fetch("https://prochemicalanddye.com/wp-admin/admin-ajax.php", {
-        "referrer": "https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/",
-        "body": "action=wpt_load_both&table_id=520994&others%5Bpage_number%5D=2&others%5BisMob%5D=false&others%5Btype%5D=load_more&others%5Breset_search_clicked%5D=no",
-        "method": "POST",
-        "mode": "cors"
-    });
-  */
   const colors = doc
     .querySelectorAll("table tr")
     .reduce((acc, productTableRowElement) => {
@@ -35,25 +30,42 @@ async function buildProChemColors() {
       }
 
       const id = cellElements[3].textContent.trim();
-      const name = cellElements[1].textContent.replace(
-        /(\s*(PRO )?MX Reactive Dye( "NEW")? +[0-9A-z]+ +|\([A-z ]+\))/g,
-        "",
-        ``,
-      );
+      const trimmedName = cellElements[1].textContent
+        .replace(/\n/g, "")
+        .replace(/ +/g, " ")
+        .trim();
+      const name = trimmedName
+        .replace(/(\s*(PRO )?MX Reactive Dye( "NEW")?|\([A-z ]+\))/g, "")
+        .trim();
 
       const colorImgUrl = cellElements[0]
         .querySelector("img")
         .getAttribute("data-src");
 
+      if (!colorImgUrl) {
+        return acc;
+      }
+
+      const imgFilename = colorImgUrl.split("/").pop();
+      const localImgPath = join(
+        dirname(fileURLToPath(import.meta.url)),
+        "../../public/pro-chem-images",
+        imgFilename,
+      );
+      const iceDyeFilename = imgFilename.replace(
+        /-[0-9]+x[0-9]+\.jpg$/g,
+        ".jpg",
+      );
+
       const color = {
         hexCode: "#000000",
         id,
         name,
-        iceDyeImgSrc: colorImgUrl.replace(/-[0-9]+x[0-9]+\.jpg$/g, ".jpg"),
+        iceDyeImgSrc: `/spiral-coloring/pro-chem-images/${iceDyeFilename}`,
       };
 
       hexCodePromises.push(
-        getHexCodeFromImage(colorImgUrl).then((hexCode) => {
+        getHexCodeFromImage(localImgPath).then((hexCode) => {
           color.hexCode = hexCode;
         }),
       );
