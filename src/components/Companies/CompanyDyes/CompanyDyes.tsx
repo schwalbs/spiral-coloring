@@ -1,5 +1,5 @@
 import { FC, MouseEventHandler, useContext, useRef, useState } from "react";
-import Icon from "@mdi/react";
+import Icon from "../../../utils/mdiReactIcon";
 import { mdiChevronDown, mdiOpenInNew } from "@mdi/js";
 import styles from "./CompanyDyes.module.css";
 import ColorBlock from "../ColorBlock";

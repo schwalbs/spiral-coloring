@@ -1,7 +1,7 @@
 import * as prettier from "prettier";
 import * as fs from "fs";
 import * as path from "path";
-import { sortFn as byColor } from "color-sorter";
+import { sort_fn as byColor } from "color-sorter";
 import chalk from "chalk";
 
 import colorBuilderByManufacturer from "./manufacturer-color-buliders/index.js";

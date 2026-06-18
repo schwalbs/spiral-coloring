@@ -1,6 +1,6 @@
 import { FC, useContext, useEffect, useRef, useState } from "react";
 import { mdiDotsVertical } from "@mdi/js";
-import Icon from "@mdi/react";
+import Icon from "../../utils/mdiReactIcon";
 import { AppStateContext } from "../../context/AppStateContext";
 import { getAppStateURL } from "../../utils/url";
 
