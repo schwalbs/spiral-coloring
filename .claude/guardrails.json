@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "name": "app",
+      "path": "src/App.tsx",
+      "purpose": "Entry point (src/main.tsx) and page layout (src/App.tsx) that put the components together; may import every lower layer."
+    },
+    {
+      "name": "components",
+      "path": "src/components",
+      "purpose": "React UI, one folder per component; may import utils, context, types but never another component folder."
+    },
+    {
+      "name": "utils",
+      "path": "src/utils",
+      "purpose": "Helpers (URL state sharing, icon wrapper, expand/collapse animation); may import context and types."
+    },
+    {
+      "name": "context",
+      "path": "src/context",
+      "purpose": "AppStateContext, the central app state; may import only types."
+    },
+    {
+      "name": "types",
+      "path": "src/types",
+      "purpose": "Shared domain types; imports nothing else from src."
+    }
+  ]
+}
