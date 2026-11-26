@@ -1,3 +1,4 @@
 env: [GITHUB_NPM_TOKEN]
 network:
   allow: [npm.pkg.github.com]
+plugins: [design-system]
