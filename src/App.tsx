@@ -1,9 +1,9 @@
 import { type FC } from "react";
-import DyePlacementDiagram from "./components/DyePlacementDiagram";
-import Companies from "./components/Companies";
-import Shirt from "./components/Shirt";
-import Options from "./components/Options";
-import SpiralControls from "./components/SpiralControls";
+import DyePlacementDiagram from "./features/DyePlacementDiagram";
+import Companies from "./features/Companies";
+import Shirt from "./features/Shirt";
+import Options from "./features/Options";
+import SpiralControls from "./features/SpiralControls";
 import { AppStateContextProvider } from "./context/AppStateContext";
 import styles from "./App.module.css";
 import { parseAppStateFromUrl } from "./utils/url";

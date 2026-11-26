@@ -16,6 +16,7 @@
     "predeploy": "concurrently --names pwa-assets,build,colors -c blue,green,magenta \"npm run build:pwa-assets\" \"npm run build\" \"npm run colors\"",
     "deploy": "gh-pages -d dist",
     "lint": "eslint . --fix",
+    "depcruise": "depcruise src --config .dependency-cruiser.cjs",
     "preview": "vite preview",
     "prepare": "husky"
   },

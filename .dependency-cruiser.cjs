@@ -1,42 +1,52 @@
 /**
  * Layer boundaries, top to bottom:
- *   app -> components -> utils -> context -> types
- * A layer may import only layers below it.
+ *   app -> features -> shared/ui -> utils -> context -> types
+ * A layer may import only layers below it; features never import each other.
  * @type {import('dependency-cruiser').IConfiguration}
  */
 module.exports = {
   forbidden: [
     {
-      name: "components-not-to-app",
-      comment: "components may not import the app entry/layout.",
+      name: "features-not-to-app",
+      comment: "features may not import the app entry/layout.",
       severity: "error",
-      from: { path: "^src/components/" },
+      from: { path: "^src/features/" },
       to: { path: "^src/(App|main)\\.tsx$" },
     },
     {
-      name: "no-cross-component-imports",
+      name: "no-cross-feature-imports",
       comment:
-        "Each component folder imports only its own files and lower layers, never another component folder.",
+        "Each feature folder imports only its own files and lower layers, never another feature folder.",
       severity: "error",
-      from: { path: "^src/components/([^/]+)/" },
+      from: { path: "^src/features/([^/]+)/" },
       to: {
-        path: "^src/components/",
-        pathNot: "^src/components/$1/",
+        path: "^src/features/",
+        pathNot: "^src/features/$1/",
       },
+    },
+    {
+      name: "shared-ui-only-down",
+      comment:
+        "shared/ui may import only its own files and types, never utils, context, features or the app.",
+      severity: "error",
+      from: { path: "^src/shared/ui/" },
+      to: { path: "^src/", pathNot: "^src/(shared/ui|types)/" },
     },
     {
       name: "utils-only-down",
       comment: "utils may import only context and types.",
       severity: "error",
       from: { path: "^src/utils/" },
-      to: { path: "^src/(App|main)\\.tsx$|^src/components/" },
+      to: { path: "^src/(App|main)\\.tsx$|^src/(features|shared/ui)/" },
     },
     {
       name: "context-only-down",
       comment: "context may import only types.",
       severity: "error",
       from: { path: "^src/context/" },
-      to: { path: "^src/(App|main)\\.tsx$|^src/(components|utils)/" },
+      to: {
+        path: "^src/(App|main)\\.tsx$|^src/(features|shared/ui|utils)/",
+      },
     },
     {
       name: "types-import-nothing",
