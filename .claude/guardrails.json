@@ -3,17 +3,22 @@
     {
       "name": "app",
       "path": "src/App.tsx",
-      "purpose": "Entry point (src/main.tsx) and page layout (src/App.tsx) that put the components together; may import every lower layer."
+      "purpose": "Entry point (src/main.tsx) and page layout (src/App.tsx) that put the features together; may import every lower layer."
     },
     {
-      "name": "components",
-      "path": "src/components",
-      "purpose": "React UI, one folder per component; may import utils, context, types but never another component folder."
+      "name": "features",
+      "path": "src/features",
+      "purpose": "React UI, one folder per feature; may import shared/ui, utils, context, types but never another feature folder."
+    },
+    {
+      "name": "shared/ui",
+      "path": "src/shared/ui",
+      "purpose": "Presentational building blocks shared by features; may import only its own files and types."
     },
     {
       "name": "utils",
       "path": "src/utils",
-      "purpose": "Helpers (URL state sharing, icon wrapper, expand/collapse animation); may import context and types."
+      "purpose": "Helpers (URL state sharing, expand/collapse animation); may import context and types."
     },
     {
       "name": "context",
