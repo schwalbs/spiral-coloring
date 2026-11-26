@@ -8,16 +8,31 @@ Color manufacturers currently supported:
 - [Jacquard](https://www.jacquardproducts.com/procion-mx)
 - [Pro Chem and Dye](https://prochemicalanddye.com/pro-mx-fiber-reactive-dyes/)
 
+## Installing
+
+The UI uses the `@schwalbs/friggle-*` design system packages, which are published to GitHub Packages and need authentication.
+The project `.npmrc` already maps the `@schwalbs` scope to `https://npm.pkg.github.com`; you only add your own token.
+
+1. Create a GitHub personal access token (classic) with the `read:packages` scope at <https://github.com/settings/tokens>.
+2. Add it to your user-level `~/.npmrc` (not the project `.npmrc`, so it is never committed):
+
+   ```ini
+   //npm.pkg.github.com/:_authToken=YOUR_TOKEN
+   ```
+
+3. Run `npm install`.
+
 ## Development
 
-This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, and the [Bootstrap CSS framework](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, [Tailwind CSS](https://tailwindcss.com/) v4, and the `@schwalbs/friggle-*` design system (components, recipes, and the glass theme from `@schwalbs/friggle-themes`).
 Other core libraries:
 
 - [node-html-parser](https://www.npmjs.com/package/node-html-parser) to parse dye manufacturer pages
 - [color-sorter](https://www.npmjs.com/package/color-sorter) to sort dye coolors by color
 - [canvas](https://www.npmjs.com/package/canvas) to reduce an image to a hex value
   - you may need to install libraries for this to work, refer to the [docs](https://github.com/Automattic/node-canvas?tab=readme-ov-file#compiling)
-- [Material Design Icons](https://pictogrammers.com/library/mdi/) for icons
+- [lucide-react](https://lucide.dev/guide/packages/lucide-react) for icons
+- [oxlint](https://oxc.rs/docs/guide/usage/linter) for linting
 
 ### Commands
 
@@ -81,3 +96,4 @@ Refer to `./src/types/colors.ts` for expected formats.
   - [ ] Workers for each manufacturer builder
   - [ ] Dye manufacturer JSON validation
   - [x] Replace bulma with bootstrap
+  - [x] Replace bootstrap with friggle
