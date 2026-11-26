@@ -1,4 +1,4 @@
 env: [GITHUB_NPM_TOKEN]
 network:
-  allow: [npm.pkg.github.com]
+  allow: [npm.pkg.github.com, pkg-npm.githubusercontent.com, registry.npmjs.org]
 plugins: [design-system, typescript]
