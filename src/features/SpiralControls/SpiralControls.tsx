@@ -1,91 +1,75 @@
-import { ChangeEventHandler, FC, useContext } from "react";
+import { FC, useContext } from "react";
+import {
+  Fieldset,
+  Inline,
+  RadioGroup,
+  RadioGroupItem,
+  Slider,
+  Text,
+} from "@schwalbs/friggle-components";
 import { AppStateContext } from "../../context/AppStateContext";
+
+const MIN_SPIRALS = 2;
+const MAX_SPIRALS = 10;
 
 const SpiralControls: FC = () => {
   const { dyeStyle, set, shirt } = useContext(AppStateContext);
 
-  const onNumSpiralsChange: ChangeEventHandler<HTMLInputElement> = ({
-    target: { value },
-  }) => {
-    set.numSpirals(parseInt(value));
+  const handleDyeStyleChange = (value: string): void => {
+    set.dyeStyle(value as "ice" | "liquid");
   };
 
-  const handleColorStyleChange: ChangeEventHandler<HTMLInputElement> = (
-    event,
-  ): void => {
-    set.dyeStyle(event.currentTarget.value as "ice" | "liquid");
+  const handleNumSpiralsChange = (value: number | readonly number[]): void => {
+    if (typeof value !== "number") {
+      return;
+    }
+    set.numSpirals(value);
   };
 
-  const handleSpiralDirectionChange: ChangeEventHandler<HTMLInputElement> = (
-    event,
-  ): void => {
-    set.spiralDirection(event.currentTarget.value as "cw" | "ccw");
+  const handleSpiralDirectionChange = (value: string): void => {
+    set.spiralDirection(value as "cw" | "ccw");
   };
 
   return (
-    <div className="d-flex gap-4">
-      <fieldset className="flex-shrink-0">
-        <legend>Dye application</legend>
-        <div className="form-check">
-          <input
-            type="radio"
-            checked={dyeStyle === "liquid"}
-            onChange={handleColorStyleChange}
-            value="liquid"
-            className="form-check-input"
-          />
-          <span className="form-check-label ms-2">Liquid</span>
-        </div>
-        <div className="form-check">
-          <input
-            type="radio"
-            checked={dyeStyle === "ice"}
-            onChange={handleColorStyleChange}
-            value="ice"
-            className="form-check-input"
-          />
-          <span className="form-check-label ms-2">Ice</span>
-        </div>
-      </fieldset>
+    <Inline gap={6} align="start">
+      <Fieldset legend="Dye application">
+        <RadioGroup
+          label="Dye application"
+          value={dyeStyle}
+          onValueChange={handleDyeStyleChange}
+        >
+          <RadioGroupItem value="liquid">Liquid</RadioGroupItem>
+          <RadioGroupItem value="ice">Ice</RadioGroupItem>
+        </RadioGroup>
+      </Fieldset>
 
-      <fieldset className="flex-shrink-0">
-        <legend>Spiral secion count</legend>
-        <div className="d-flex gap-2">
-          <span className="medium">{shirt.numSpirals}</span>
-          <input
-            type="range"
-            min="2"
-            max="10"
+      <Fieldset legend="Spiral section count">
+        <Inline gap={3}>
+          <Text as="span" strong>
+            {shirt.numSpirals}
+          </Text>
+          <Slider
+            label="Spiral section count"
+            min={MIN_SPIRALS}
+            max={MAX_SPIRALS}
             value={shirt.numSpirals}
-            onChange={onNumSpiralsChange}
-            className="form-range"
+            onValueChange={handleNumSpiralsChange}
+            className="w-40"
           />
-        </div>
-      </fieldset>
-      <fieldset className="flex-shrink-0">
-        <legend>Spiral direction</legend>
-        <div className="form-check">
-          <input
-            type="radio"
-            checked={shirt.spiralDirection === "cw"}
-            onChange={handleSpiralDirectionChange}
-            value="cw"
-            className="form-check-input"
-          />
-          <span className="form-check-label ms-2">Clockwise</span>
-        </div>
-        <div className="form-check">
-          <input
-            type="radio"
-            checked={shirt.spiralDirection === "ccw"}
-            onChange={handleSpiralDirectionChange}
-            value="ccw"
-            className="form-check-input"
-          />
-          <span className="form-check-label ms-2">Counter Clockwise</span>
-        </div>
-      </fieldset>
-    </div>
+        </Inline>
+      </Fieldset>
+
+      <Fieldset legend="Spiral direction">
+        <RadioGroup
+          label="Spiral direction"
+          value={shirt.spiralDirection}
+          onValueChange={handleSpiralDirectionChange}
+        >
+          <RadioGroupItem value="cw">Clockwise</RadioGroupItem>
+          <RadioGroupItem value="ccw">Counter Clockwise</RadioGroupItem>
+        </RadioGroup>
+      </Fieldset>
+    </Inline>
   );
 };
 
