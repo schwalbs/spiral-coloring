@@ -16,8 +16,8 @@ export default ({ mode }: ConfigEnv) => {
           name: "Tie Dye Spiral Coloring",
           short_name: "TieDyeSpiralColoring",
           description: "A web app for exploring tie dye spirals.",
-          theme_color: "#1f2229",
-          background_color: "#14161a",
+          theme_color: "#0f1012",
+          background_color: "#0f1012",
           display: "standalone",
           start_url: "/spiral-coloring/",
           icons: [
