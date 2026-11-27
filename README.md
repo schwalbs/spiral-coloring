@@ -24,7 +24,7 @@ The project `.npmrc` already maps the `@schwalbs` scope to `https://npm.pkg.gith
 
 ## Development
 
-This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, [Tailwind CSS](https://tailwindcss.com/) v4, and the `@schwalbs/friggle-*` design system (components, recipes, and the glass theme from `@schwalbs/friggle-themes`).
+This project is built with [react](https://react.dev/), [vite](https://vite.dev/), TypeScript, [Tailwind CSS](https://tailwindcss.com/) v4, and the `@schwalbs/friggle-*` design system (components and the glass theme from `@schwalbs/friggle-themes`).
 Other core libraries:
 
 - [node-html-parser](https://www.npmjs.com/package/node-html-parser) to parse dye manufacturer pages

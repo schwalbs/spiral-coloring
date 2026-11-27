@@ -64,7 +64,7 @@ This is a React + TypeScript + Vite app for visualizing tie-dye spiral patterns 
 
 ### Styling & UI
 
-- **Friggle design system** (`@schwalbs/friggle-components`, `@schwalbs/friggle-recipes`) for components; follow the `design-system:guide` skill when writing UI
+- **Friggle design system** (`@schwalbs/friggle-components`) for components; follow the `design-system:guide` skill when writing UI
 - **Glass theme** from `@schwalbs/friggle-themes`, selected with `data-style="glass"` on `<html>` in `index.html`. There is no `data-theme`, so light and dark follow `prefers-color-scheme`. Font is Inter via `@fontsource-variable/inter`
 - **Tailwind v4** with the CSS entry `src/shared/ui/theme.css`: imports Tailwind first, then `@schwalbs/friggle-themes` once; also holds the base `block-size: 100%` for `html`/`body`/`#root`, `AppLayout`'s `@utility`, and `@utility grid-cols-auto-fit`
 - **Feature code** may use only layout classes in `className` (enforced by oxlint); styling goes in `shared/ui` components. No arbitrary values (`[...]`)
