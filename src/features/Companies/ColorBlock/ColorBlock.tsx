@@ -1,7 +1,7 @@
 import { FC, MouseEventHandler, useContext } from "react";
 import { Color, Company } from "../../../types/colors";
-import styles from "./ColorBlock.module.css";
 import { AppStateContext } from "../../../context/AppStateContext";
+import ColorSwatch from "../../../shared/ui/ColorSwatch";
 
 type Props = {
   color: Color;
@@ -16,29 +16,17 @@ const ColorBlock: FC<Props> = ({
   isSelected,
   onClick,
 }) => {
-  const { dyeStyle: style } = useContext(AppStateContext);
+  const { dyeStyle } = useContext(AppStateContext);
 
   return (
-    <button
-      type="button"
+    <ColorSwatch
+      hexCode={color.hexCode}
+      imageSrc={dyeStyle === "ice" ? color.iceDyeImgSrc : undefined}
+      imageStyles={iceDyeImgStyles}
+      label={color.name}
+      selected={isSelected}
       onClick={onClick}
-      className={`
-        ${styles.container}
-        ${isSelected ? " border-light " : " border-transparent "}
-        d-flex flex-column justify-content-between p-1 overflow-hidden rounded-2 btn border-2`}
-      style={{
-        backgroundColor: color.hexCode,
-        backgroundImage:
-          style === "ice" && color.iceDyeImgSrc
-            ? `url(${color.iceDyeImgSrc})`
-            : undefined,
-        ...iceDyeImgStyles,
-      }}
-    >
-      <span className={`${styles.name} small bg-dark text-white py-2 px-1`}>
-        {color.name}
-      </span>
-    </button>
+    />
   );
 };
 export default ColorBlock;
