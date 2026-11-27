@@ -79,6 +79,7 @@ These are approved; do not "fix" them:
 2. `AppLayout` keeps full-height scroll regions for the controls and companies columns instead of letting the document scroll (the guide's document-scroll rule).
 3. `SwatchGrid` uses hand-written `grid grid-cols-3 gap-2` plus the `grid-cols-auto-fit` `@utility` instead of friggle `Grid`, because `Grid` is one column below `md`.
 4. No `PageHeader` `h1`. Company names stay `<h3>` with `Heading level={3}` styling (`text-lg`).
+5. The `focus-ring-svg` `@utility` in `src/shared/ui/theme.css`, used next to `focus-ring` on the folded-shirt diagram's SVG slices (`DiagramSection`). friggle's `focus-ring` draws a box-shadow, which SVG shapes don't paint, so this strokes the shape with the ring color instead. It is the one approved exception to the `@utility` limit and to the no-hand-written-focus-classes rule.
 
 ### Adding New Dye Manufacturers
 
