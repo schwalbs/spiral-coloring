@@ -12,9 +12,11 @@ type Props = {
  * The link sits beside the trigger because a link cannot nest inside a button.
  * The chevron points down when open and up when closed. friggle's built-in indicator does the
  * reverse and cannot be flipped through className, so it is hidden (`*:last:hidden`) and replaced.
+ * AccordionTrigger wraps its button in an `<h3 class="flex">`; `*:first:flex-1` makes that heading
+ * fill the row so the whole header toggles and the link stays at the right edge.
  */
 const CompanyHeader: FC<Props> = ({ name, siteHref }) => (
-  <div className="sticky top-0 z-sticky flex items-center gap-2 bg-background px-4">
+  <div className="sticky top-0 z-sticky flex items-center gap-2 bg-background px-4 *:first:flex-1">
     <AccordionTrigger className="text-lg font-semibold *:last:hidden">
       {name}
       <ChevronDown
