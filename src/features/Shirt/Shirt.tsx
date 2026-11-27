@@ -1,7 +1,6 @@
 import { useContext, type FC } from "react";
 import { AppStateContext } from "../../context/AppStateContext";
 import buildSpiralPaths from "./buildSpiralPaths";
-import styles from "./Shirt.module.css";
 
 const VIEWBOX_SIZE = 500;
 
@@ -25,9 +24,8 @@ const Shirt: FC = () => {
   };
 
   return (
-    <div className={styles.shirt}>
+    <div className="relative aspect-square w-full">
       <svg
-        className={styles.shirtSvg}
         viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +73,7 @@ const Shirt: FC = () => {
               <path
                 key={i}
                 d={path}
-                style={{ color: shirt.spirals[i]?.hexCode ?? "transparent" }}
+                color={shirt.spirals[i]?.hexCode ?? "transparent"}
                 fill={getSpiralFill(i)}
                 stroke={dyeStyle === "liquid" ? "currentColor" : "none"}
                 strokeWidth="1"
