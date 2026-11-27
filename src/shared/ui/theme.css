@@ -59,3 +59,18 @@
 @utility grid-cols-auto-fit {
   grid-template-columns: repeat(auto-fit, minmax(--spacing(30), 1fr));
 }
+
+/*
+ * Focus ring for SVG shapes. The friggle focus-ring draws a box-shadow, which
+ * SVG shapes do not paint, so this strokes the shape with the ring colour
+ * instead. The outline is a fallback for engines that paint it on shapes.
+ */
+@utility focus-ring-svg {
+  &:focus-visible {
+    outline: var(--ring-width) solid var(--ring);
+    outline-offset: var(--ring-offset);
+    stroke: var(--ring);
+    stroke-width: calc(var(--ring-width) * 4);
+    stroke-linejoin: round;
+  }
+}
