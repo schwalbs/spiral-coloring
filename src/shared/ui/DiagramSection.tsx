@@ -44,7 +44,7 @@ const DiagramSection: FC<DiagramSectionProps> = ({
         role: "button",
         tabIndex: 0,
         "aria-label": getLabel(section, total),
-        className: "outline-none focus-ring-svg",
+        className: "focus-ring focus-ring-svg",
         pointerEvents: "all",
         cursor: "pointer",
         onClick: () => onSelect(section),
