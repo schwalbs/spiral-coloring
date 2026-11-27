@@ -29,17 +29,12 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
-    "@mdi/js": "^7.4.47",
-    "@mdi/react": "^1.6.1",
     "@schwalbs/friggle-components": "^5.0.0",
-    "@schwalbs/friggle-recipes": "^5.0.0",
     "@schwalbs/friggle-themes": "^5.0.0",
     "@tailwindcss/vite": "^4.3.5",
-    "bootstrap": "^5.3.8",
     "lucide-react": "^1.80.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-router": "^8.5.3",
     "tailwindcss": "^4.3.5"
   },
   "overrides": {
