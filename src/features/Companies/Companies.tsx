@@ -1,4 +1,5 @@
 import { FC, useEffect, useState } from "react";
+import { Accordion } from "@schwalbs/friggle-components";
 import { Company } from "../../types/colors";
 import CompanyDyes from "./CompanyDyes";
 
@@ -17,12 +18,20 @@ const Colors: FC = () => {
   }, []);
 
   return (
-    <div className="pb-4">
+    <>
       {dyeCompanies == null && <span>Loading colors...</span>}
-      {dyeCompanies?.map((company) => (
-        <CompanyDyes company={company} key={company.name} />
-      ))}
-    </div>
+      {dyeCompanies && (
+        // Rendered only after load so defaultValue opens every company once.
+        <Accordion
+          multiple
+          defaultValue={dyeCompanies.map((company) => company.name)}
+        >
+          {dyeCompanies.map((company) => (
+            <CompanyDyes company={company} key={company.name} />
+          ))}
+        </Accordion>
+      )}
+    </>
   );
 };
 
