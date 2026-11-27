@@ -1,46 +1,18 @@
-import { FC, useContext, useEffect, useRef, useState } from "react";
-import { mdiDotsVertical } from "@mdi/js";
-import Icon from "../../utils/mdiReactIcon";
+import { FC, useContext } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  IconButton,
+} from "@schwalbs/friggle-components";
+import { EllipsisVertical } from "lucide-react";
 import { AppStateContext } from "../../context/AppStateContext";
 import { getAppStateURL } from "../../utils/url";
 
 const Options: FC = () => {
   const appState = useContext(AppStateContext);
   const { shirt, set } = appState;
-  const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-
-    menuRef.current?.focus();
-
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      if (
-        !target.closest(".dropdown-menu") &&
-        !target.closest(".dropdown-toggle")
-      ) {
-        setIsOpen(false);
-      }
-    };
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [isOpen]);
 
   const clearShirtColors = () => {
     set.spiralColors(
@@ -63,50 +35,26 @@ const Options: FC = () => {
   };
 
   return (
-    <div className={`dropdown ${isOpen ? "show" : ""}`}>
-      <div>
-        <button
-          className="btn btn-sm btn-outline-light dropdown-toggle"
-          aria-haspopup
-          aria-controls="options-menu"
-          type="button"
-          onClick={() => setIsOpen((prev) => !prev)}
-        >
-          <Icon path={mdiDotsVertical} size="1rem" />
-        </button>
-      </div>
-      <div
-        ref={menuRef}
-        className={`dropdown-menu ${isOpen ? "show" : ""}`}
-        id="options-menu"
-        role="menu"
-        tabIndex={0}
-      >
-        <div>
-          <button
-            className="dropdown-item btn btn-link text-start border-0 w-100 rounded-0"
-            type="button"
-            onClick={clearShirtColors}
-          >
-            Remove all colors
-          </button>
-          {/* <button
-            className="dropdown-item"
-            type="button"
-            onClick={copyDesignURL}
-          >
-            Download pattern
-          </button> */}
-          <button
-            className="dropdown-item btn btn-link text-start border-0 w-100 rounded-0"
-            type="button"
-            onClick={copyDesignURL}
-          >
-            Copy link with pattern
-          </button>
-        </div>
-      </div>
-    </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={
+          <IconButton
+            icon={EllipsisVertical}
+            label="Options"
+            variant="outline"
+            size="sm"
+          />
+        }
+      />
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={clearShirtColors}>
+          Remove all colors
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={copyDesignURL}>
+          Copy link with pattern
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
