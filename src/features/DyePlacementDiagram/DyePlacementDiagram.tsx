@@ -1,6 +1,6 @@
 import { useContext, type FC } from "react";
 import { AppStateContext } from "../../context/AppStateContext";
-import styles from "./DyePlacementDiagram.module.css";
+import DiagramSection from "../../shared/ui/DiagramSection";
 
 const VIEW_BOX_SIZE = 500;
 const SPIRAL_RADIUS = VIEW_BOX_SIZE / 2;
@@ -14,6 +14,7 @@ const getXYFromRadians = (radians: number): [number, number] => {
 
 const DyePlacementDiagram: FC = () => {
   const { selectedColor, set, shirt } = useContext(AppStateContext);
+  const { numSpirals, spirals } = shirt;
 
   const handleSectionClick = (section: number): void => {
     if (!selectedColor) {
@@ -23,44 +24,42 @@ const DyePlacementDiagram: FC = () => {
     set.spiralColor(section, selectedColor);
   };
 
+  const radiansPerSection = (2 * Math.PI) / numSpirals;
+
   return (
-    <div className={styles.container}>
+    <div className="aspect-square h-3/4 w-3/4">
       <svg
         viewBox={`0 0 ${VIEW_BOX_SIZE} ${VIEW_BOX_SIZE}`}
         xmlns="http://www.w3.org/2000/svg"
         strokeWidth="0.5"
         fill="transparent"
       >
-        <circle
-          cx={VIEW_BOX_SIZE / 2}
-          cy={VIEW_BOX_SIZE / 2}
-          r={VIEW_BOX_SIZE / 2}
-          strokeWidth="4"
-          className={styles.slicePath}
-          fill={
-            shirt.numSpirals === 1 && shirt.spirals[0]
-              ? shirt.spirals[0].hexCode
-              : "#fff"
-          }
-          onClick={() => handleSectionClick(0)}
+        <DiagramSection
+          shape={{ kind: "circle", diameter: VIEW_BOX_SIZE }}
+          section={0}
+          total={numSpirals}
+          hexCode={numSpirals === 1 ? spirals[0]?.hexCode : undefined}
+          isInteractive={numSpirals === 1}
+          onSelect={handleSectionClick}
         />
-        {shirt.numSpirals > 1 &&
-          Array.from({ length: shirt.numSpirals }).map((_, section) => {
-            const radiansPerSection = (2 * Math.PI) / shirt.numSpirals;
+        {numSpirals > 1 &&
+          Array.from({ length: numSpirals }).map((_, section) => {
             const arcStartXY = getXYFromRadians(radiansPerSection * section);
             const arcEndXY = getXYFromRadians(
               radiansPerSection * (section + 1),
             );
-            const spiral = shirt.spirals[section];
 
             return (
-              <path
-                className={styles.slicePath}
+              <DiagramSection
                 key={section}
-                d={`M ${SPIRAL_CENTER} L ${arcStartXY.join(",")} A ${SPIRAL_CENTER},0,0,1,${arcEndXY.join(",")} z`}
-                stroke={spiral ? spiral.hexCode : "#14161a"}
-                fill={spiral?.hexCode ?? "none"}
-                onClick={() => handleSectionClick(section)}
+                shape={{
+                  kind: "slice",
+                  path: `M ${SPIRAL_CENTER} L ${arcStartXY.join(",")} A ${SPIRAL_CENTER},0,0,1,${arcEndXY.join(",")} z`,
+                }}
+                section={section}
+                total={numSpirals}
+                hexCode={spirals[section]?.hexCode}
+                onSelect={handleSectionClick}
               />
             );
           })}

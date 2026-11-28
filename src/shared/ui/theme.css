@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "@schwalbs/friggle-themes/index.css";
+
+@layer base {
+  html,
+  body,
+  #root {
+    block-size: 100%;
+  }
+}
+
+/*
+ * Page grid for the app. Children opt into a region with
+ * data-area="shirt-output" | "controls" | "colors".
+ */
+@utility app-layout {
+  margin-inline: auto;
+  display: grid;
+  grid-template-areas:
+    "controls"
+    "shirt-output"
+    "colors";
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
+  min-block-size: 100%;
+  max-block-size: 100%;
+  overflow: hidden;
+
+  & > [data-area="shirt-output"] {
+    grid-area: shirt-output;
+  }
+
+  & > [data-area="controls"] {
+    grid-area: controls;
+    overflow-x: auto;
+  }
+
+  & > [data-area="colors"] {
+    grid-area: colors;
+    overflow: auto;
+  }
+
+  @media (width >= 768px) {
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 20rem 1fr 1fr;
+    grid-template-areas:
+      "shirt-output controls controls"
+      "shirt-output colors colors"
+      "shirt-output colors colors";
+
+    & > [data-area="shirt-output"] {
+      block-size: fit-content;
+      max-block-size: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+@utility grid-cols-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(--spacing(30), 1fr));
+}
+
+/*
+ * Focus ring for SVG shapes. The friggle focus-ring draws a box-shadow, which
+ * SVG shapes do not paint, so this strokes the shape with the ring colour
+ * instead. The outline is a fallback for engines that paint it on shapes.
+ */
+@utility focus-ring-svg {
+  &:focus-visible {
+    outline: var(--ring-width) solid var(--ring);
+    outline-offset: var(--ring-offset);
+    stroke: var(--ring);
+    stroke-width: calc(var(--ring-width) * 4);
+    stroke-linejoin: round;
+  }
+}
